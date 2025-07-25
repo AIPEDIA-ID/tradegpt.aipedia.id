@@ -1,65 +1,144 @@
 ---
 ---
 
-<section class="py-20 px-4 relative">
+<section class="py-12 px-4 relative">  <!-- Reduced padding -->
   <!-- Background -->
   <div class="absolute inset-0 bg-gradient-to-b from-black via-gray-900/20 to-black"></div>
   
-  <div class="relative z-10 max-w-4xl mx-auto">
+  <div class="relative z-10 max-w-3xl mx-auto">  <!-- Reduced max width -->
     <!-- Section Header -->
-    <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-bold mb-6">
+    <div class="text-center mb-10">  <!-- Reduced margin -->
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">  <!-- Reduced font size and margin -->
         Common
         <span class="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">Questions</span>
       </h2>
-      <p class="text-xl text-gray-400">
-        Everything you need to know about CustomGPT Trading Assistant
+      <p class="text-lg text-gray-400">  <!-- Reduced font size -->
+        Everything you need to know about TradeGPT Trading Assistant
       </p>
     </div>
     
     <!-- FAQ Items -->
-    <div class="space-y-6">
+    <div class="space-y-4">  <!-- Reduced spacing -->
       <!-- FAQ 1 -->
-      <div class="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-        <h3 class="text-lg font-semibold text-white mb-3">How is this different from other trading signals?</h3>
-        <p class="text-gray-400">Most signal providers just give you entries without context. CustomGPT explains the reasoning behind each signal using technical analysis and macro factors. You learn while you trade, making you a better trader over time.</p>
+      <div class="faq-item p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">  <!-- Reduced padding and border radius -->
+        <button class="faq-question w-full flex justify-between items-center text-left">
+          <h3 class="text-base font-semibold text-white">How is this different from other trading signals?</h3>  <!-- Reduced font size -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-orange-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">  <!-- Reduced icon size -->
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-answer mt-2 hidden">  <!-- Reduced margin -->
+          <p class="text-sm text-gray-400">Most signal providers just give you entries without context. TradeGPT explains the reasoning behind each signal using technical analysis and macro factors. You learn while you trade, making you a better trader over time.</p>  <!-- Reduced font size -->
+        </div>
       </div>
       
       <!-- FAQ 2 -->
-      <div class="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-        <h3 class="text-lg font-semibold text-white mb-3">I'm busy with my day job. How much time does this require?</h3>
-        <p class="text-gray-400">Designed for exactly that situation. 5 minutes in the morning to check your positions and any new signals. Weekend preparation takes 10-15 minutes. That's it. No need to watch charts all day.</p>
+      <div class="faq-item p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
+        <button class="faq-question w-full flex justify-between items-center text-left">
+          <h3 class="text-base font-semibold text-white">I'm busy with my day job. How much time does this require?</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-orange-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-answer mt-2 hidden">
+          <p class="text-sm text-gray-400">Designed for exactly that situation. 5 minutes in the morning to check your positions and any new signals. Weekend preparation takes 10-15 minutes. That's it. No need to watch charts all day.</p>
+        </div>
       </div>
       
       <!-- FAQ 3 -->
-      <div class="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-        <h3 class="text-lg font-semibold text-white mb-3">What if I'm new to technical analysis?</h3>
-        <p class="text-gray-400">Perfect for beginners. Every signal comes with clear explanations of why we're seeing that setup. You'll learn about RSI, MACD, support/resistance, and macro factors naturally through daily use.</p>
+      <div class="faq-item p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
+        <button class="faq-question w-full flex justify-between items-center text-left">
+          <h3 class="text-base font-semibold text-white">What if I'm new to technical analysis?</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-orange-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-answer mt-2 hidden">
+          <p class="text-sm text-gray-400">Perfect for beginners. Every signal comes with clear explanations of why we're seeing that setup. You'll learn about RSI, MACD, support/resistance, and macro factors naturally through daily use.</p>
+        </div>
       </div>
       
       <!-- FAQ 4 -->
-      <div class="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-        <h3 class="text-lg font-semibold text-white mb-3">Can I get a refund if it doesn't work for me?</h3>
-        <p class="text-gray-400">Absolutely. 30-day money-back guarantee, no questions asked. Try it for a full month. If you don't see improvement in your decision-making, get your money back.</p>
+      <div class="faq-item p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
+        <button class="faq-question w-full flex justify-between items-center text-left">
+          <h3 class="text-base font-semibold text-white">Can I get a refund if it doesn't work for me?</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-orange-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-answer mt-2 hidden">
+          <p class="text-sm text-gray-400">Absolutely. 30-day money-back guarantee, no questions asked. Try it for a full month. If you don't see improvement in your decision-making, get your money back.</p>
+        </div>
       </div>
       
       <!-- FAQ 5 -->
-      <div class="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-        <h3 class="text-lg font-semibold text-white mb-3">What crypto pairs do you cover?</h3>
-        <p class="text-gray-400">Free tier covers BTC and ETH. Pro includes 20+ major pairs: SOL, ADA, DOT, LINK, MATIC, AVAX, and more. We focus on high-volume, liquid pairs where technical analysis is most effective.</p>
+      <div class="faq-item p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
+        <button class="faq-question w-full flex justify-between items-center text-left">
+          <h3 class="text-base font-semibold text-white">What crypto pairs do you cover?</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-orange-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-answer mt-2 hidden">
+          <p class="text-sm text-gray-400">Free tier covers BTC and ETH. Pro includes 20+ major pairs: SOL, ADA, DOT, LINK, MATIC, AVAX, and more. We focus on high-volume, liquid pairs where technical analysis is most effective.</p>
+        </div>
       </div>
       
       <!-- FAQ 6 -->
-      <div class="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-        <h3 class="text-lg font-semibold text-white mb-3">Is this financial advice?</h3>
-        <p class="text-gray-400">No, this is educational analysis. CustomGPT provides technical and macro insights to help you make informed decisions. Always do your own research and never risk more than you can afford to lose.</p>
+      <div class="faq-item p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
+        <button class="faq-question w-full flex justify-between items-center text-left">
+          <h3 class="text-base font-semibold text-white">Is this financial advice?</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-orange-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-answer mt-2 hidden">
+          <p class="text-sm text-gray-400">No, this is educational analysis. TradeGPT provides technical and macro insights to help you make informed decisions. Always do your own research and never risk more than you can afford to lose.</p>
+        </div>
       </div>
       
       <!-- FAQ 7 -->
-      <div class="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-        <h3 class="text-lg font-semibold text-white mb-3">Why one-time payment instead of subscription?</h3>
-        <p class="text-gray-400">We believe in aligned incentives. Once you've paid, we want you to succeed long-term. No monthly pressure, no artificial scarcity tactics. Just honest analysis to help you trade better.</p>
+      <div class="faq-item p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
+        <button class="faq-question w-full flex justify-between items-center text-left">
+          <h3 class="text-base font-semibold text-white">Why one-time payment instead of subscription?</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-orange-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-answer mt-2 hidden">
+          <p class="text-sm text-gray-400">We believe in aligned incentives. Once you've paid, we want you to succeed long-term. No monthly pressure, no artificial scarcity tactics. Just honest analysis to help you trade better.</p>
+        </div>
       </div>
     </div>
   </div>
+
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+      const faqQuestions = document.querySelectorAll('.faq-question');
+      
+      faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+          const faqItem = question.parentElement;
+          const answer = faqItem.querySelector('.faq-answer');
+          const icon = question.querySelector('svg');
+          
+          // Toggle current FAQ item
+          answer.classList.toggle('hidden');
+          icon.classList.toggle('rotate-180');
+          
+          // Close other FAQ items (optional - for accordion behavior)
+          faqQuestions.forEach(otherQuestion => {
+            if (otherQuestion !== question) {
+              const otherFaqItem = otherQuestion.parentElement;
+              const otherAnswer = otherFaqItem.querySelector('.faq-answer');
+              const otherIcon = otherQuestion.querySelector('svg');
+              
+              otherAnswer.classList.add('hidden');
+              otherIcon.classList.remove('rotate-180');
+            }
+          });
+        });
+      });
+    });
+  </script>
 </section>

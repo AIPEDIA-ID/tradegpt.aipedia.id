@@ -8,30 +8,36 @@
   <div class="absolute bottom-20 right-1/4 w-72 h-72 bg-orange-400/5 rounded-full blur-[140px] animate-float"></div>
   
   <div class="relative z-10 max-w-4xl mx-auto text-center">
-    <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-      Ready to Trade
-      <span class="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">Smarter?</span>
-    </h2>
-    
-    <p class="text-xl text-gray-300 mb-4 max-w-2xl mx-auto">
-      Join 2,400+ traders who've stopped guessing and started making informed decisions.
-    </p>
-    
-    <p class="text-lg text-gray-400 mb-12 max-w-xl mx-auto">
-      Start with our free tier. No credit card required. Upgrade when you're ready.
-    </p>
-    
-    <!-- CTA Buttons -->
-    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-      <a href="#pricing" class="group inline-flex items-center gap-2 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-orange-500/25 hover:scale-105">
-        Start Free Trial
-        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-        </svg>
-      </a>
-      <a href="#pricing" class="inline-flex items-center gap-2 px-8 py-4 bg-white/5 hover:bg-white/10 text-white font-semibold rounded-xl border border-white/20 hover:border-white/30 transition-all duration-200 backdrop-blur-sm">
-        Get Pro Access
-      </a>
+    <!-- Glassy Container -->
+    <div class="glassy-container relative max-w-3xl mx-auto mb-12 rounded-2xl p-8 bg-white/5 backdrop-blur-sm overflow-hidden">
+      <!-- Animated Border Effect -->
+      <div class="glassy-border"></div>
+      
+      <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+        Ready to Trade
+        <span class="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">Smarter?</span>
+      </h2>
+      
+      <p class="text-xl text-gray-300 mb-4 max-w-2xl mx-auto">
+        Join 2,400+ traders who've stopped guessing and started making informed decisions.
+      </p>
+      
+      <p class="text-lg text-gray-400 mb-8 max-w-xl mx-auto">
+        Start with our free tier. No credit card required. Upgrade when you're ready.
+      </p>
+      
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="#pricing" class="group inline-flex items-center gap-2 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-orange-500/25 hover:scale-105">
+          Get Pro Access
+          <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+          </svg>
+        </a>
+        <a href="#pricing" class="inline-flex items-center gap-2 px-8 py-4 bg-white/5 hover:bg-white/10 text-white font-semibold rounded-xl border border-white/20 hover:border-white/30 transition-all duration-200 backdrop-blur-sm">
+          Start Free Trial  
+        </a>
+      </div>
     </div>
     
     <!-- Guarantees -->
@@ -56,4 +62,45 @@
       </div>
     </div>
   </div>
+
+  <style>
+    .glassy-container {
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .glassy-border {
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 1px;
+      background: linear-gradient(
+        var(--angle, 0deg),
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 126, 0, 0.3),
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 126, 0, 0.2)
+      );
+      -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+      animation: rotate 4s linear infinite;
+    }
+    
+    @keyframes rotate {
+      to {
+        --angle: 360deg;
+      }
+    }
+    
+    @property --angle {
+      syntax: '<angle>';
+      initial-value: 0deg;
+      inherits: false;
+    }
+  </style>
 </section>
