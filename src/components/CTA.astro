@@ -1,4 +1,26 @@
 ---
+const ctaContent = {
+  title: {
+    main: "Ready to Trade",
+    highlight: "Smarter?"
+  },
+  description: "Join 2,400+ traders who've stopped guessing and started making informed decisions.",
+  subtext: "Start with our free tier. No credit card required. Upgrade when you're ready.",
+  button: {
+    text: "Get Pro Access",
+    link: "#pricing"
+  },
+  features: [
+    {
+      icon: "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z",
+      text: "No recurring fees"
+    },
+    {
+      icon: "M13 10V3L4 14h7v7l9-11h-7z",
+      text: "Instant access"
+    }
+  ]
+};
 ---
 
 <section class="py-20 px-4 relative">
@@ -12,22 +34,22 @@
       <div class="glassy-border"></div>
       
       <h2 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">
-        Ready to Trade
-        <span class="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">Smarter?</span>
+        {ctaContent.title.main}
+        <span class="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">{ctaContent.title.highlight}</span>
       </h2>
       
       <p class="text-xl text-gray-300 mb-4 max-w-2xl mx-auto">
-        Join 2,400+ traders who've stopped guessing and started making informed decisions.
+        {ctaContent.description}
       </p>
       
       <p class="text-lg text-gray-400 mb-8 max-w-xl mx-auto">
-        Start with our free tier. No credit card required. Upgrade when you're ready.
+        {ctaContent.subtext}
       </p>
       
       <!-- CTA Buttons -->
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <a href="#pricing" class="group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-orange-400 to-orange-600 hover:from-orange-500 hover:to-orange-700 text-white font-semibold rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-orange-500/25 hover:scale-105">
-          Get Pro Access
+        <a href={ctaContent.button.link} class="group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-orange-400 to-orange-600 hover:from-orange-500 hover:to-orange-700 text-white font-semibold rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-orange-500/25 hover:scale-105">
+          {ctaContent.button.text}
           <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
           </svg>
@@ -36,18 +58,14 @@
     </div>
     
     <div class="flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-gray-400">
-      <div class="flex items-center gap-2">
-        <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-        </svg>
-        <span>No recurring fees</span>
-      </div>
-      <div class="flex items-center gap-2">
-        <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-        </svg>
-        <span>Instant access</span>
-      </div>
+      {ctaContent.features.map(feature => (
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={feature.icon}></path>
+          </svg>
+          <span>{feature.text}</span>
+        </div>
+      ))}
     </div>
   </div>
 

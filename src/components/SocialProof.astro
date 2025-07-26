@@ -1,4 +1,44 @@
 ---
+const content = {
+  header: {
+    title: {
+      main: "Trusted by",
+      highlight: "Smart Traders"
+    },
+    description: "Real feedback from traders who've improved their results with TradeGPT"
+  },
+  testimonials: [
+    {
+      avatar: {
+        initial: "M",
+        gradient: "from-blue-400 to-blue-600"
+      },
+      name: "Marcus Chen",
+      role: "Software Engineer & Swing Trader",
+      quote: "Finally, a tool that gets it. I don't have time to stare at charts all day. TradeGPT gives me the context I need in 5 minutes each morning. My hit rate went from 40% to 65% in two months.",
+      rating: 5
+    },
+    {
+      avatar: {
+        initial: "S",
+        gradient: "from-green-400 to-green-600"
+      },
+      name: "Sarah Martinez",
+      role: "Marketing Director & Part-time Trader",
+      quote: "The macro context is what sold me. Understanding why BTC is moving based on DXY and BTC dominance changed my approach completely. No more random entries based on hopium.",
+      rating: 5
+    }
+  ],
+  stats: [
+    { value: "2,400+", label: "Active Traders" },
+    { value: "65%", label: "Avg Win Rate" },
+    { value: "5min", label: "Daily Usage" },
+    { value: "4.8/5", label: "User Rating" }
+  ]
+};
+
+// SVG path for star icon
+const starIconPath = "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z";
 ---
 
 <section class="py-20 px-4 relative">
@@ -9,101 +49,49 @@
     <!-- Section Header -->
     <div class="text-center mb-16">
       <h2 class="text-4xl md:text-5xl font-bold mb-6">
-        Trusted by
-        <span class="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">Smart Traders</span>
+        {content.header.title.main}
+        <span class="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">{content.header.title.highlight}</span>
       </h2>
       <p class="text-xl text-gray-400 max-w-2xl mx-auto">
-        Real feedback from traders who've improved their results with TradeGPT
+        {content.header.description}
       </p>
     </div>
     
     <!-- Testimonials -->
     <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
-      <!-- Testimonial 1 -->
-      <div class="p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
-        <div class="flex items-center gap-4 mb-6">
-          <div class="w-12 h-12 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white font-semibold">
-            M
+      {content.testimonials.map(testimonial => (
+        <div class="p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
+          <div class="flex items-center gap-4 mb-6">
+            <div class={`w-12 h-12 bg-gradient-to-r ${testimonial.avatar.gradient} rounded-full flex items-center justify-center text-white font-semibold`}>
+              {testimonial.avatar.initial}
+            </div>
+            <div>
+              <div class="font-semibold text-white">{testimonial.name}</div>
+              <div class="text-sm text-gray-400">{testimonial.role}</div>
+            </div>
           </div>
-          <div>
-            <div class="font-semibold text-white">Marcus Chen</div>
-            <div class="text-sm text-gray-400">Software Engineer & Swing Trader</div>
-          </div>
-        </div>
-        <blockquote class="text-gray-300 italic mb-4">
-          "Finally, a tool that gets it. I don't have time to stare at charts all day. TradeGPT gives me the context I need in 5 minutes each morning. My hit rate went from 40% to 65% in two months."
-        </blockquote>
-        <div class="flex text-orange-400">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-        </div>
-      </div>
-      
-      <!-- Testimonial 2 -->
-      <div class="p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
-        <div class="flex items-center gap-4 mb-6">
-          <div class="w-12 h-12 bg-gradient-to-r from-green-400 to-green-600 rounded-full flex items-center justify-center text-white font-semibold">
-            S
-          </div>
-          <div>
-            <div class="font-semibold text-white">Sarah Martinez</div>
-            <div class="text-sm text-gray-400">Marketing Director & Part-time Trader</div>
+          <blockquote class="text-gray-300 italic mb-4">
+            "{testimonial.quote}"
+          </blockquote>
+          <div class="flex text-orange-400">
+            {Array.from({ length: testimonial.rating }).map(() => (
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path d={starIconPath}></path>
+              </svg>
+            ))}
           </div>
         </div>
-        <blockquote class="text-gray-300 italic mb-4">
-          "The macro context is what sold me. Understanding why BTC is moving based on DXY and BTC dominance changed my approach completely. No more random entries based on hopium."
-        </blockquote>
-        <div class="flex text-orange-400">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-        </div>
-      </div>
+      ))}
     </div>
     
     <!-- Stats -->
     <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
-      <div>
-        <div class="text-3xl font-bold text-orange-400 mb-2">2,400+</div>
-        <p class="text-gray-400">Active Traders</p>
-      </div>
-      <div>
-        <div class="text-3xl font-bold text-orange-400 mb-2">65%</div>
-        <p class="text-gray-400">Avg Win Rate</p>
-      </div>
-      <div>
-        <div class="text-3xl font-bold text-orange-400 mb-2">5min</div>
-        <p class="text-gray-400">Daily Usage</p>
-      </div>
-      <div>
-        <div class="text-3xl font-bold text-orange-400 mb-2">4.8/5</div>
-        <p class="text-gray-400">User Rating</p>
-      </div>
+      {content.stats.map(stat => (
+        <div>
+          <div class="text-3xl font-bold text-orange-400 mb-2">{stat.value}</div>
+          <p class="text-gray-400">{stat.label}</p>
+        </div>
+      ))}
     </div>
   </div>
 </section>

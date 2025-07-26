@@ -1,21 +1,44 @@
 ---
-const typicalSignals = [
-  "Trust me bro\" signals with no reasoning",
-  "Pump their own bags with \"exclusive\" calls",
-  "$99/month recurring with hidden fees",
-  "Fake Lambos and rented mansions",
-  "Delete losing trades, highlight winners",
-  "FOMO tactics: \"Last chance!\" \"VIP only!\""
-];
-
-const tradeGPTApproach = [
-  "Every signal backed by technical reasoning",
-  "Objective analysis of liquid, major pairs only",
-  "$65 one-time payment, no subscriptions",
-  "Built by traders, for traders with day jobs",
-  "Transparent track record, no cherry-picking",
-  "Education-focused: Learn while you trade"
-];
+const content = {
+  header: {
+    title: {
+      main: "Not Another",
+      highlight: "Signal Scam"
+    },
+    description: "Here's how TradeGPT differs from the typical \"crypto guru\" nonsense"
+  },
+  comparison: {
+    typical: {
+      title: "Typical Signal Services",
+      items: [
+        "Trust me bro\" signals with no reasoning",
+        "Pump their own bags with \"exclusive\" calls",
+        "$99/month recurring with hidden fees",
+        "Fake Lambos and rented mansions",
+        "Delete losing trades, highlight winners",
+        "FOMO tactics: \"Last chance!\" \"VIP only!\""
+      ]
+    },
+    tradeGPT: {
+      title: "TradeGPT Approach",
+      items: [
+        "Every signal backed by technical reasoning",
+        "Objective analysis of liquid, major pairs only",
+        "$65 one-time payment, no subscriptions",
+        "Built by traders, for traders with day jobs",
+        "Transparent track record, no cherry-picking",
+        "Education-focused: Learn while you trade"
+      ]
+    }
+  },
+  cta: {
+    text: "No hype. No BS. Just clear signals when the setup is right.",
+    button: {
+      text: "Try It Now",
+      link: "#pricing"
+    }
+  }
+};
 ---
 
 <section class="py-16 px-4 relative">
@@ -26,11 +49,11 @@ const tradeGPTApproach = [
     <!-- Section Header -->
     <div class="text-center mb-12">
       <h2 class="text-3xl md:text-4xl font-bold mb-4">
-        Not Another
-        <span class="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">Signal Scam</span>
+        {content.header.title.main}
+        <span class="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">{content.header.title.highlight}</span>
       </h2>
       <p class="text-lg text-gray-400 max-w-2xl mx-auto">
-        Here's how TradeGPT differs from the typical "crypto guru" nonsense
+        {content.header.description}
       </p>
     </div>
     
@@ -44,11 +67,11 @@ const tradeGPTApproach = [
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
           </div>
-          <h3 class="text-lg font-semibold text-red-300">Typical Signal Services</h3>
+          <h3 class="text-lg font-semibold text-red-300">{content.comparison.typical.title}</h3>
         </div>
         
         <div class="space-y-3 text-sm">
-          {typicalSignals.map(item => (
+          {content.comparison.typical.items.map(item => (
             <div class="flex items-start gap-2">
               <span class="w-1 h-1 bg-red-400 rounded-full mt-2 flex-shrink-0"></span>
               <span class="text-gray-400">{item}</span>
@@ -65,11 +88,11 @@ const tradeGPTApproach = [
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
             </svg>
           </div>
-          <h3 class="text-lg font-semibold text-green-300">TradeGPT Approach</h3>
+          <h3 class="text-lg font-semibold text-green-300">{content.comparison.tradeGPT.title}</h3>
         </div>
         
         <div class="space-y-3 text-sm">
-          {tradeGPTApproach.map(item => (
+          {content.comparison.tradeGPT.items.map(item => (
             <div class="flex items-start gap-2">
               <span class="w-1 h-1 bg-green-400 rounded-full mt-2 flex-shrink-0"></span>
               <span class="text-gray-300">{item}</span>
@@ -82,10 +105,10 @@ const tradeGPTApproach = [
     <!-- Bottom CTA -->
     <div class="text-center mt-10">
       <p class="text-gray-400 mb-6">
-        No hype. No BS. Just clear signals when the setup is right.
+        {content.cta.text}
       </p>
-      <a href="#pricing" class="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-orange-500/25">
-        Try It Now
+      <a href={content.cta.button.link} class="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-orange-500/25">
+        {content.cta.button.text}
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
         </svg>
