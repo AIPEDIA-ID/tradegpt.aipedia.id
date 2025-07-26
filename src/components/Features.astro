@@ -1,4 +1,73 @@
 ---
+// Feature data
+const features = [
+  {
+    title: "Live Technical Analysis",
+    description: "Real-time RSI, MACD, Bollinger Bands, and volume analysis across all major timeframes.",
+    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>',
+    items: [
+      { text: "4H & Daily RSI signals", color: "orange" },
+      { text: "MACD divergence detection", color: "orange" },
+      { text: "Volume confirmation", color: "orange" }
+    ],
+    size: "small"
+  },
+  {
+    title: "Smart S&R Levels",
+    description: "Automatically identifies key support and resistance zones with historical test data.",
+    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>',
+    items: [
+      { text: "Dynamic support/resistance", color: "orange" },
+      { text: "Break/retest notifications", color: "orange" },
+      { text: "Risk/reward ratios", color: "orange" }
+    ],
+    size: "small"
+  },
+  {
+    title: "Macro Context",
+    description: "BTC dominance, DXY, Fear & Greed Index, and market sentiment analysis.",
+    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>',
+    items: [
+      { text: "BTC.D trend analysis", color: "orange" },
+      { text: "DXY correlation tracking", color: "orange" },
+      { text: "Fear & Greed signals", color: "orange" }
+    ],
+    size: "small"
+  },
+  {
+    title: "Simple Signals",
+    description: "No complex charts. Just clear BUY, SELL, or WAIT recommendations with reasoning.",
+    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>',
+    items: [
+      { text: "BUY: Strong confluence", color: "green" },
+      { text: "SELL: Risk management", color: "red" },
+      { text: "WAIT: Unclear conditions", color: "yellow" }
+    ],
+    size: "small"
+  },
+  {
+    title: "All Major Pairs",
+    description: "BTC, ETH, SOL, and top altcoins. Focus on the movers, ignore the noise.",
+    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>',
+    items: [
+      { text: "Top 20 by market cap", color: "orange" },
+      { text: "High-volume pairs only", color: "orange" },
+      { text: "Custom watchlists", color: "orange" }
+    ],
+    size: "large"
+  },
+  {
+    title: "Built for Busy Traders",
+    description: "5-minute daily check-ins. Perfect for traders with full-time jobs.",
+    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>',
+    items: [
+      { text: "Morning market summary", color: "orange" },
+      { text: "Key level alerts", color: "orange" },
+      { text: "Weekend preparation", color: "orange" }
+    ],
+    size: "large"
+  }
+];
 ---
 
 <section id="features" class="py-16 px-6 relative">
@@ -19,155 +88,25 @@
     
     <!-- Features Grid -->
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-      <!-- Feature 1: Live Technical Indicators -->
-      <div class="group p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-orange-500/30 hover:bg-white/10 transition-all duration-300">
-        <div class="w-10 h-10 bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg flex items-center justify-center mb-4">
-          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-          </svg>
+      {features.map((feature) => (
+        <div class={`group p-${feature.size === 'large' ? '8' : '6'} rounded-${feature.size === 'large' ? '2xl' : 'xl'} bg-white/5 backdrop-blur-sm border border-white/10 hover:border-orange-500/30 hover:bg-white/10 transition-all duration-300`}>
+          <div class={`w-${feature.size === 'large' ? '12' : '10'} h-${feature.size === 'large' ? '12' : '10'} bg-gradient-to-r from-orange-400 to-orange-600 rounded-${feature.size === 'large' ? 'xl' : 'lg'} flex items-center justify-center mb-${feature.size === 'large' ? '6' : '4'}`}>
+            <svg class={`w-${feature.size === 'large' ? '6' : '5'} h-${feature.size === 'large' ? '6' : '5'} text-white`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <Fragment set:html={feature.icon} />
+            </svg>
+          </div>
+          <h3 class={`text-${feature.size === 'large' ? 'xl' : 'lg'} font-semibold mb-${feature.size === 'large' ? '4' : '3'} text-white`}>{feature.title}</h3>
+          <p class={`text-gray-400 mb-${feature.size === 'large' ? '4' : '3'} ${feature.size === 'large' ? '' : 'text-sm'}`}>{feature.description}</p>
+          <ul class={`space-y-${feature.size === 'large' ? '2' : '1.5'} ${feature.size === 'large' ? 'text-sm' : 'text-xs'} text-gray-300`}>
+            {feature.items.map((item) => (
+              <li class="flex items-center gap-2">
+                <span class={`w-${feature.size === 'large' ? '1.5' : '1'} h-${feature.size === 'large' ? '1.5' : '1'} bg-${item.color}-400 rounded-full`}></span>
+                {item.text}
+              </li>
+            ))}
+          </ul>
         </div>
-        <h3 class="text-lg font-semibold mb-3 text-white">Live Technical Analysis</h3>
-        <p class="text-gray-400 mb-3 text-sm">Real-time RSI, MACD, Bollinger Bands, and volume analysis across all major timeframes.</p>
-        <ul class="space-y-1.5 text-xs text-gray-300">
-          <li class="flex items-center gap-2">
-            <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-            4H & Daily RSI signals
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-            MACD divergence detection
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-            Volume confirmation
-          </li>
-        </ul>
-      </div>
-      
-      <!-- Feature 2: Support & Resistance -->
-      <div class="group p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-orange-500/30 hover:bg-white/10 transition-all duration-300">
-        <div class="w-10 h-10 bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg flex items-center justify-center mb-4">
-          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
-          </svg>
-        </div>
-        <h3 class="text-lg font-semibold mb-3 text-white">Smart S&R Levels</h3>
-        <p class="text-gray-400 mb-3 text-sm">Automatically identifies key support and resistance zones with historical test data.</p>
-        <ul class="space-y-1.5 text-xs text-gray-300">
-          <li class="flex items-center gap-2">
-            <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-            Dynamic support/resistance
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-            Break/retest notifications
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-            Risk/reward ratios
-          </li>
-        </ul>
-      </div>
-      
-      <!-- Feature 3: Macro Indicators -->
-      <div class="group p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-orange-500/30 hover:bg-white/10 transition-all duration-300">
-        <div class="w-10 h-10 bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg flex items-center justify-center mb-4">
-          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-          </svg>
-        </div>
-        <h3 class="text-lg font-semibold mb-3 text-white">Macro Context</h3>
-        <p class="text-gray-400 mb-3 text-sm">BTC dominance, DXY, Fear & Greed Index, and market sentiment analysis.</p>
-        <ul class="space-y-1.5 text-xs text-gray-300">
-          <li class="flex items-center gap-2">
-            <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-            BTC.D trend analysis
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-            DXY correlation tracking
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-            Fear & Greed signals
-          </li>
-        </ul>
-      </div>
-      
-      <!-- Feature 4: Clear Signals -->
-      <div class="group p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-orange-500/30 hover:bg-white/10 transition-all duration-300">
-        <div class="w-10 h-10 bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg flex items-center justify-center mb-4">
-          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-          </svg>
-        </div>
-        <h3 class="text-lg font-semibold mb-3 text-white">Simple Signals</h3>
-        <p class="text-gray-400 mb-3 text-sm">No complex charts. Just clear BUY, SELL, or WAIT recommendations with reasoning.</p>
-        <ul class="space-y-1.5 text-xs text-gray-300">
-          <li class="flex items-center gap-2">
-            <span class="w-1 h-1 bg-green-400 rounded-full"></span>
-            BUY: Strong confluence
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="w-1 h-1 bg-red-400 rounded-full"></span>
-            SELL: Risk management
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="w-1 h-1 bg-yellow-400 rounded-full"></span>
-            WAIT: Unclear conditions
-          </li>
-        </ul>
-      </div>
-      
-      <!-- Feature 5: Multi-Asset Coverage -->
-      <div class="group p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-orange-500/30 hover:bg-white/10 transition-all duration-300">
-        <div class="w-12 h-12 bg-gradient-to-r from-orange-400 to-orange-600 rounded-xl flex items-center justify-center mb-6">
-          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-          </svg>
-        </div>
-        <h3 class="text-xl font-semibold mb-4 text-white">All Major Pairs</h3>
-        <p class="text-gray-400 mb-4">BTC, ETH, SOL, and top altcoins. Focus on the movers, ignore the noise.</p>
-        <ul class="space-y-2 text-sm text-gray-300">
-          <li class="flex items-center gap-2">
-            <span class="w-1.5 h-1.5 bg-orange-400 rounded-full"></span>
-            Top 20 by market cap
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="w-1.5 h-1.5 bg-orange-400 rounded-full"></span>
-            High-volume pairs only
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="w-1.5 h-1.5 bg-orange-400 rounded-full"></span>
-            Custom watchlists
-          </li>
-        </ul>
-      </div>
-      
-      <!-- Feature 6: Time-Efficient -->
-      <div class="group p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-orange-500/30 hover:bg-white/10 transition-all duration-300">
-        <div class="w-12 h-12 bg-gradient-to-r from-orange-400 to-orange-600 rounded-xl flex items-center justify-center mb-6">
-          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-          </svg>
-        </div>
-        <h3 class="text-xl font-semibold mb-4 text-white">Built for Busy Traders</h3>
-        <p class="text-gray-400 mb-4">5-minute daily check-ins. Perfect for traders with full-time jobs.</p>
-        <ul class="space-y-2 text-sm text-gray-300">
-          <li class="flex items-center gap-2">
-            <span class="w-1.5 h-1.5 bg-orange-400 rounded-full"></span>
-            Morning market summary
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="w-1.5 h-1.5 bg-orange-400 rounded-full"></span>
-            Key level alerts
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="w-1.5 h-1.5 bg-orange-400 rounded-full"></span>
-            Weekend preparation
-          </li>
-        </ul>
-      </div>
+      ))}
     </div>
   </div>
 </section>
