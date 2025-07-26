@@ -177,45 +177,181 @@
         <p class="text-gray-400">Real conversation with TradeGPT Trading Assistant</p>
       </div>
       
-      <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 space-y-3">
-        <!-- User Message -->
-        <div class="flex gap-3">
-          <div class="w-7 h-7 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs font-semibold">
-            U
-          </div>
-          <div class="bg-blue-500/10 border border-blue-500/20 rounded-lg p-3 max-w-sm">
-            <p class="text-blue-100 text-sm">What's the BTC setup looking like for swing trades?</p>
-          </div>
+      <!-- Image Gallery Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+        <!-- Gallery Item 1 -->
+        <div class="gallery-item cursor-pointer overflow-hidden rounded-lg">
+          <img 
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" 
+            alt="TradeGPT Demo 1" 
+            class="w-full h-48 object-cover transition-all duration-300 hover:scale-105"
+          />
         </div>
-        
-        <!-- GPT Response -->
-        <div class="flex gap-3">
-          <div class="w-7 h-7 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full flex items-center justify-center text-white text-xs font-semibold">
-            AI
-          </div>
-          <div class="bg-white/5 border border-white/10 rounded-lg p-3 flex-1">
-            <div class="space-y-2">
-              <p class="text-white font-medium text-sm">📊 BTC Analysis - Current Signal: <span class="text-yellow-400">WAIT</span></p>
-              
-              <div class="space-y-1 text-xs text-gray-300">
-                <p><strong>Technical:</strong></p>
-                <p>• RSI (4H): 52 - neutral zone</p>
-                <p>• MACD: Bearish divergence forming</p>
-                <p>• Key resistance: $44,200 (tested 3x)</p>
-                <p>• Support: $41,800 holding strong</p>
-                
-                <p><strong>Macro Context:</strong></p>
-                <p>• BTC.D: 51.2% - slight decline</p>
-                <p>• DXY: Showing strength at 103.8</p>
-                <p>• Fear & Greed: 58 (Greed) - caution warranted</p>
-                
-                <p><strong>Recommendation:</strong></p>
-                <p>Wait for a clear break above $44,200 with volume or a test of $41,800 support. Current position is choppy - preserve capital.</p>
-              </div>
+        <!-- Gallery Item 2 -->
+        <div class="gallery-item cursor-pointer overflow-hidden rounded-lg">
+          <img 
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" 
+            alt="TradeGPT Demo 2" 
+            class="w-full h-48 object-cover transition-all duration-300 hover:scale-105"
+          />
+        </div>
+        <!-- Gallery Item 3 -->
+        <div class="gallery-item cursor-pointer overflow-hidden rounded-lg">
+          <img 
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" 
+            alt="TradeGPT Demo 3" 
+            class="w-full h-48 object-cover transition-all duration-300 hover:scale-105"
+          />
+        </div>
+        <!-- Gallery Item 4 -->
+        <div class="gallery-item cursor-pointer overflow-hidden rounded-lg">
+          <img 
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" 
+            alt="TradeGPT Demo 4" 
+            class="w-full h-48 object-cover transition-all duration-300 hover:scale-105"
+          />
+        </div>
+        <!-- Gallery Item 5 -->
+        <div class="gallery-item cursor-pointer overflow-hidden rounded-lg">
+          <img 
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" 
+            alt="TradeGPT Demo 5" 
+            class="w-full h-48 object-cover transition-all duration-300 hover:scale-105"
+          />
+        </div>
+        <!-- Gallery Item 6 -->
+        <div class="gallery-item cursor-pointer overflow-hidden rounded-lg">
+          <img 
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg" 
+            alt="TradeGPT Demo 6" 
+            class="w-full h-48 object-cover transition-all duration-300 hover:scale-105"
+          />
+        </div>
+      </div>
+      
+      <!-- Lightbox Modal -->
+      <div id="lightbox-modal" class="fixed inset-0 z-50 hidden bg-black/90 flex items-center justify-center">
+        <div class="relative w-full max-w-4xl px-4">
+          <!-- Close Button -->
+          <button id="close-lightbox" class="absolute top-2 right-6 text-white z-50 bg-black/50 hover:bg-black/80 rounded-full w-8 h-8 flex items-center justify-center transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          
+          <!-- Carousel Container -->
+          <div id="lightbox-carousel" class="relative">
+            <!-- Carousel Items -->
+            <div id="carousel-items" class="relative overflow-hidden rounded-lg">
+              <!-- Images will be dynamically added here -->
             </div>
+            
+            <!-- Carousel Controls -->
+            <button id="prev-slide" class="absolute left-2 top-1/2 -translate-y-1/2 bg-orange-500/70 hover:bg-orange-500 text-white rounded-full p-2 focus:outline-none">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button id="next-slide" class="absolute right-2 top-1/2 -translate-y-1/2 bg-orange-500/70 hover:bg-orange-500 text-white rounded-full p-2 focus:outline-none">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const carouselItems = document.getElementById('carousel-items');
+    const closeButton = document.getElementById('close-lightbox');
+    const prevButton = document.getElementById('prev-slide');
+    const nextButton = document.getElementById('next-slide');
+    
+    let currentIndex = 0;
+    const images = [];
+    
+    // Collect all images from gallery
+    galleryItems.forEach((item, index) => {
+      const img = item.querySelector('img');
+      images.push({
+        src: img.src,
+        alt: img.alt
+      });
+      
+      // Add click event to open lightbox
+      item.addEventListener('click', () => {
+        openLightbox(index);
+      });
+    });
+    
+    // Function to open lightbox
+    function openLightbox(index) {
+      currentIndex = index;
+      updateCarousel();
+      lightboxModal.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    }
+    
+    // Function to close lightbox
+    function closeLightbox() {
+      lightboxModal.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }
+    
+    // Function to update carousel
+    function updateCarousel() {
+      carouselItems.innerHTML = '';
+      
+      // Create image element
+      const imgElement = document.createElement('img');
+      imgElement.src = images[currentIndex].src;
+      imgElement.alt = images[currentIndex].alt;
+      imgElement.className = 'w-full h-auto max-h-[80vh] object-contain';
+      
+      carouselItems.appendChild(imgElement);
+    }
+    
+    // Event listeners
+    closeButton.addEventListener('click', closeLightbox);
+    
+    // Close when clicking outside the image
+    lightboxModal.addEventListener('click', (e) => {
+      if (e.target === lightboxModal) {
+        closeLightbox();
+      }
+    });
+    
+    // Previous slide
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      updateCarousel();
+    });
+    
+    // Next slide
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      updateCarousel();
+    });
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (!lightboxModal.classList.contains('hidden')) {
+        if (e.key === 'Escape') {
+          closeLightbox();
+        } else if (e.key === 'ArrowLeft') {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          updateCarousel();
+        } else if (e.key === 'ArrowRight') {
+          currentIndex = (currentIndex + 1) % images.length;
+          updateCarousel();
+        }
+      }
+    });
+  });
+</script>
