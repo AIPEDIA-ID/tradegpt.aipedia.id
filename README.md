@@ -1,48 +1,46 @@
-# Astro Starter Kit: Basics
+# TradeGPT
 
-```sh
-npm create astro@latest -- --template basics
-```
+TradeGPT adalah asisten trading berbasis AI yang memberikan sinyal trading crypto yang jelas dan terperinci. Dirancang untuk trader dengan pekerjaan tetap, TradeGPT menyediakan analisis teknikal dan makro ekonomi secara real-time.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Fitur Utama
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **Analisis Teknikal Live**: RSI, MACD, Bollinger Bands, dan analisis volume di semua timeframe utama
+- **Level Support & Resistance Cerdas**: Identifikasi otomatis zona support dan resistance dengan data pengujian historis
+- **Konteks Makro**: Analisis BTC dominance, DXY, Fear & Greed Index, dan sentimen pasar
+- **Sinyal Sederhana**: Rekomendasi BUY, SELL, atau WAIT yang jelas dengan penjelasan
+- **Semua Pair Utama**: Mencakup BTC, ETH, SOL, dan altcoin top lainnya
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Cara Kerja
 
-## 🚀 Project Structure
+1. **Pengumpulan Data**: Mengambil data real-time dari berbagai exchange, menganalisis pergerakan harga, volume, dan sentimen pasar
+2. **Analisis Sentimen**: Memantau media sosial, berita, dan sentimen pasar untuk mengukur psikologi investor
+3. **Analisis Makroekonomi**: Mengevaluasi indikator ekonomi dan peristiwa global yang mempengaruhi pergerakan pasar
+4. **Analisis Teknikal**: Memproses berbagai indikator secara bersamaan, mengidentifikasi pola yang mungkin terlewatkan oleh trader manusia
 
-Inside of your Astro project, you'll see the following folders and files:
+## Paket Berlangganan
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+### Free Tier ($0)
+- 3 sinyal per hari
+- Analisis BTC & ETH
+- Indikator teknikal dasar
+- Ringkasan pasar harian
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+### Pro Tier ($65 one-time)
+- Sinyal tidak terbatas
+- Semua pair crypto (20+ aset)
+- Analisis makro lanjutan
+- Level support & resistance
+- Watchlist kustom
+- Alat manajemen risiko
+- Dukungan prioritas
 
-## 🧞 Commands
+## FAQ
 
-All commands are run from the root of the project, from a terminal:
+- **Apa perbedaan dengan sinyal trading lainnya?** TradeGPT menjelaskan alasan di balik setiap sinyal menggunakan analisis teknikal dan faktor makro.
+- **Berapa waktu yang dibutuhkan?** Hanya 5 menit di pagi hari untuk memeriksa posisi dan sinyal baru. Persiapan akhir pekan membutuhkan 10-15 menit.
+- **Apakah saya perlu menginstal sesuatu?** Tidak perlu instalasi. CustomGPT berjalan sepenuhnya melalui ChatGPT.
+- **Apakah ini nasihat finansial?** Tidak, ini adalah analisis edukasi. TradeGPT memberikan wawasan teknikal dan makro untuk membantu Anda membuat keputusan yang terinformasi.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Akses
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Kunjungi [TradeGPT Pro](https://remote.myr.id/pl/tradegpt) untuk mendapatkan akses Pro.
