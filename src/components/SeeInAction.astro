@@ -1,43 +1,12 @@
 ---
-const galleryImages = [
-  {
-    src: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
-    alt: "TradeGPT Demo 1"
-  },
-  {
-    src: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
-    alt: "TradeGPT Demo 2"
-  },
-  {
-    src: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
-    alt: "TradeGPT Demo 3"
-  },
-  {
-    src: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
-    alt: "TradeGPT Demo 4"
-  },
-  {
-    src: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
-    alt: "TradeGPT Demo 5"
-  },
-  {
-    src: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg",
-    alt: "TradeGPT Demo 6"
-  }
-];
+import { seeInAction } from '../data/content.json';
+const { galleryImages, content } = seeInAction;
 
 // Styles yang digunakan berulang
 const styles = {
   galleryItem: "gallery-item cursor-pointer overflow-hidden rounded-lg",
   galleryImage: "w-full h-48 object-cover transition-all duration-300 hover:scale-105",
   carouselButton: "absolute top-1/2 -translate-y-1/2 bg-orange-500/70 hover:bg-orange-500 text-white rounded-full p-2 focus:outline-none"
-};
-
-// Teks konten
-const content = {
-  title: "See It In Action",
-  brandName: "TradeGPT",
-  subtitle: "Real conversation with TradeGPT Trading Assistant"
 };
 ---
 
