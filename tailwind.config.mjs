@@ -1,6 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  safelist: [
+    'w-4', 'w-5', 'h-4', 'h-5',
+    'text-orange-400', 'text-green-400',
+    'from-orange-400', 'to-orange-600',
+    'from-orange-500', 'to-orange-700',
+    // Button classes
+    'block', 'bg-gradient-to-r', 'text-white', 'font-medium', 'rounded-lg',
+    'transition-all', 'duration-200', 'hover:shadow-lg', 'hover:shadow-orange-500/25',
+    'text-center', 'bg-white/10', 'hover:bg-white/20', 'border', 'border-white/20',
+    'hover:border-orange-500/30',
+    // Card classes
+    'group', 'p-6', 'rounded-xl', 'bg-gradient-to-br', 'from-orange-500/10',
+    'to-orange-600/5', 'backdrop-blur-sm', 'border-orange-500/30',
+    'hover:border-orange-500/50', 'relative', 'overflow-hidden',
+    'bg-white/5', 'border-white/10', 'hover:border-white/20'
+  ],
   theme: {
     extend: {
       colors: {
