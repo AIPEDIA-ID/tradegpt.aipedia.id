@@ -1,4 +1,21 @@
 ---
+const typicalSignals = [
+  "Trust me bro\" signals with no reasoning",
+  "Pump their own bags with \"exclusive\" calls",
+  "$99/month recurring with hidden fees",
+  "Fake Lambos and rented mansions",
+  "Delete losing trades, highlight winners",
+  "FOMO tactics: \"Last chance!\" \"VIP only!\""
+];
+
+const tradeGPTApproach = [
+  "Every signal backed by technical reasoning",
+  "Objective analysis of liquid, major pairs only",
+  "$65 one-time payment, no subscriptions",
+  "Built by traders, for traders with day jobs",
+  "Transparent track record, no cherry-picking",
+  "Education-focused: Learn while you trade"
+];
 ---
 
 <section class="py-16 px-4 relative">
@@ -31,30 +48,12 @@
         </div>
         
         <div class="space-y-3 text-sm">
-          <div class="flex items-start gap-2">
-            <span class="w-1 h-1 bg-red-400 rounded-full mt-2 flex-shrink-0"></span>
-            <span class="text-gray-400">"Trust me bro" signals with no reasoning</span>
-          </div>
-          <div class="flex items-start gap-2">
-            <span class="w-1 h-1 bg-red-400 rounded-full mt-2 flex-shrink-0"></span>
-            <span class="text-gray-400">Pump their own bags with "exclusive" calls</span>
-          </div>
-          <div class="flex items-start gap-2">
-            <span class="w-1 h-1 bg-red-400 rounded-full mt-2 flex-shrink-0"></span>
-            <span class="text-gray-400">$99/month recurring with hidden fees</span>
-          </div>
-          <div class="flex items-start gap-2">
-            <span class="w-1 h-1 bg-red-400 rounded-full mt-2 flex-shrink-0"></span>
-            <span class="text-gray-400">Fake Lambos and rented mansions</span>
-          </div>
-          <div class="flex items-start gap-2">
-            <span class="w-1 h-1 bg-red-400 rounded-full mt-2 flex-shrink-0"></span>
-            <span class="text-gray-400">Delete losing trades, highlight winners</span>
-          </div>
-          <div class="flex items-start gap-2">
-            <span class="w-1 h-1 bg-red-400 rounded-full mt-2 flex-shrink-0"></span>
-            <span class="text-gray-400">FOMO tactics: "Last chance!" "VIP only!"</span>
-          </div>
+          {typicalSignals.map(item => (
+            <div class="flex items-start gap-2">
+              <span class="w-1 h-1 bg-red-400 rounded-full mt-2 flex-shrink-0"></span>
+              <span class="text-gray-400">{item}</span>
+            </div>
+          ))}
         </div>
       </div>
       
@@ -70,30 +69,12 @@
         </div>
         
         <div class="space-y-3 text-sm">
-          <div class="flex items-start gap-2">
-            <span class="w-1 h-1 bg-green-400 rounded-full mt-2 flex-shrink-0"></span>
-            <span class="text-gray-300">Every signal backed by technical reasoning</span>
-          </div>
-          <div class="flex items-start gap-2">
-            <span class="w-1 h-1 bg-green-400 rounded-full mt-2 flex-shrink-0"></span>
-            <span class="text-gray-300">Objective analysis of liquid, major pairs only</span>
-          </div>
-          <div class="flex items-start gap-2">
-            <span class="w-1 h-1 bg-green-400 rounded-full mt-2 flex-shrink-0"></span>
-            <span class="text-gray-300">$65 one-time payment, no subscriptions</span>
-          </div>
-          <div class="flex items-start gap-2">
-            <span class="w-1 h-1 bg-green-400 rounded-full mt-2 flex-shrink-0"></span>
-            <span class="text-gray-300">Built by traders, for traders with day jobs</span>
-          </div>
-          <div class="flex items-start gap-2">
-            <span class="w-1 h-1 bg-green-400 rounded-full mt-2 flex-shrink-0"></span>
-            <span class="text-gray-300">Transparent track record, no cherry-picking</span>
-          </div>
-          <div class="flex items-start gap-2">
-            <span class="w-1 h-1 bg-green-400 rounded-full mt-2 flex-shrink-0"></span>
-            <span class="text-gray-300">Education-focused: Learn while you trade</span>
-          </div>
+          {tradeGPTApproach.map(item => (
+            <div class="flex items-start gap-2">
+              <span class="w-1 h-1 bg-green-400 rounded-full mt-2 flex-shrink-0"></span>
+              <span class="text-gray-300">{item}</span>
+            </div>
+          ))}
         </div>
       </div>
     </div>
