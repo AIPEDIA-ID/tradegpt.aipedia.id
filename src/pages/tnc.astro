@@ -1,6 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+// Variabel untuk tanggal pembaruan T&C
+const lastUpdated = "25 Juli 2025";
+
 // Variabel untuk konten TnC
 const tncSections = [
   {
@@ -36,6 +39,12 @@ const tncSections = [
     content: "Kami berhak untuk memodifikasi ketentuan ini kapan saja. Perubahan akan berlaku segera setelah diposting. Penggunaan berkelanjutan Anda atas Layanan setelah perubahan tersebut merupakan penerimaan Anda terhadap ketentuan yang dimodifikasi."
   }
 ];
+
+// Variabel untuk teks tambahan
+const additionalText = {
+  title: "Penggunaan Atas Risiko Sendiri",
+  content: "Penggunaan TradeGPT Trading Assistant sepenuhnya atas risiko Anda sendiri. Kami tidak bertanggung jawab atas kerugian atau kerusakan yang timbul dari penggunaan atau ketergantungan pada informasi yang disediakan oleh layanan kami. Dengan menggunakan TradeGPT Trading Assistant, Anda mengakui bahwa Anda telah membaca, memahami, dan menyetujui ketentuan ini."
+};
 ---
 
 <Layout title="Terms & Conditions - TradeGPT Trading Assistant">
@@ -52,6 +61,7 @@ const tncSections = [
         <p class="text-lg text-gray-400">
           Disclaimer dan ketentuan penggunaan TradeGPT Trading Assistant
         </p>
+        <p class="text-sm text-gray-500 mt-2">Terakhir diperbarui: {lastUpdated}</p>
       </div>
       
       <!-- Content -->
@@ -65,8 +75,8 @@ const tncSections = [
           ))}
           
           <div class="mb-8">
-            <h2 class="text-xl font-semibold text-orange-500 mb-4">{tncSections.length + 1}. Penggunaan Atas Risiko Sendiri</h2>
-            <p>Penggunaan TradeGPT Trading Assistant sepenuhnya atas risiko Anda sendiri. Kami tidak bertanggung jawab atas kerugian atau kerusakan yang timbul dari penggunaan atau ketergantungan pada informasi yang disediakan oleh layanan kami. Dengan menggunakan TradeGPT Trading Assistant, Anda mengakui bahwa Anda telah membaca, memahami, dan menyetujui ketentuan ini.</p>
+            <h2 class="text-xl font-semibold text-orange-500 mb-4">{tncSections.length + 1}. {additionalText.title}</h2>
+            <p>{additionalText.content}</p>
           </div>
         </div>
       </div>
