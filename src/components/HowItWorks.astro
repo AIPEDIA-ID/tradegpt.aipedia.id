@@ -1,4 +1,70 @@
 ---
+// Data untuk section header
+const sectionHeader = {
+  title: "How TradeGPT Works",
+  description: "From market data to actionable signals in seconds. No noise, just clear trading decisions."
+};
+
+// Data untuk steps
+const steps = [
+  {
+    number: 1,
+    title: "Data Collection",
+    description: "TradeGPT pulls real-time data from multiple exchanges, analyzing price action, volume, and market sentiment.",
+    features: [
+      "Live price feeds",
+      "Volume analysis",
+      "Market sentiment tracking"
+    ]
+  },
+  {
+    number: 2,
+    title: "Sentiment Analysis",
+    description: "Our AI monitors social media, news, and market sentiment to gauge investor psychology and market mood.",
+    features: [
+      "Fear & Greed Indicators",
+      "News sentiment tracking",
+      "Investor psychology indicators"
+    ]
+  },
+  {
+    number: 3,
+    title: "Macroeconomic Analysis",
+    description: "TradeGPT evaluates economic indicators and global events that impact market movements and asset valuations.",
+    features: [
+      "Interest rate impact",
+      "Economic data analysis",
+      "Global event correlation"
+    ]
+  },
+  {
+    number: 4,
+    title: "Technical Analysis",
+    description: "Our AI processes multiple indicators simultaneously, identifying patterns human traders might miss.",
+    features: [
+      "RSI & MACD analysis",
+      "Support/resistance detection",
+      "Pattern recognition"
+    ]
+  },
+  {
+    number: 5,
+    title: "Clear Signals",
+    description: "Get straightforward BUY, SELL, or WAIT signals with entry points, targets, and stop-loss recommendations.",
+    features: [
+      "Actionable trade signals",
+      "Risk management guidance",
+      "Detailed reasoning"
+    ]
+  }
+];
+
+// Data untuk bottom CTA
+const bottomCTA = {
+  text: "No more staring at charts for hours. TradeGPT does the heavy lifting so you can make informed decisions in seconds.",
+  buttonText: "Start Trading Smarter",
+  buttonLink: "#pricing"
+};
 ---
 
 <section id="how-it-works" class="py-16 px-6 relative">
@@ -9,155 +75,46 @@
     <!-- Section Header -->
     <div class="text-center mb-12">
       <h2 class="text-3xl md:text-4xl font-bold mb-4">
-        How
+        {sectionHeader.title.split("TradeGPT")[0]}
         <span class="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">TradeGPT</span>
-        Works
+        {sectionHeader.title.split("TradeGPT")[1]}
       </h2>
       <p class="text-lg text-gray-400 max-w-2xl mx-auto">
-        From market data to actionable signals in seconds. No noise, just clear trading decisions.
+        {sectionHeader.description}
       </p>
     </div>
     
     <!-- Steps Grid -->
     <div class="grid grid-cols-1 md:grid-cols-5 gap-5 mb-12 justify-items-center">
-      <!-- Step 1 -->
-      <div class="group relative col-span-1">
-        <!-- Circle indicator - fixed positioning to match design -->
-        <div class="absolute -left-2 -top-2 w-10 h-10 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full flex items-center justify-center text-xl font-bold z-10">
-          1
+      {steps.map((step) => (
+        <div class="group relative col-span-1">
+          <!-- Circle indicator - fixed positioning to match design -->
+          <div class="absolute -left-2 -top-2 w-10 h-10 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full flex items-center justify-center text-xl font-bold z-10">
+            {step.number}
+          </div>
+          <div class="p-5 pt-8 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-orange-500/30 hover:bg-white/10 transition-all duration-300 h-full">
+            <h3 class="text-lg font-semibold mb-3 text-white">{step.title}</h3>
+            <p class="text-gray-400 mb-3 text-sm">{step.description}</p>
+            <ul class="space-y-1.5 text-xs text-gray-300">
+              {step.features.map((feature) => (
+                <li class="flex items-center gap-2">
+                  <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-        <div class="p-5 pt-8 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-orange-500/30 hover:bg-white/10 transition-all duration-300 h-full">
-          <h3 class="text-lg font-semibold mb-3 text-white">Data Collection</h3>
-          <p class="text-gray-400 mb-3 text-sm">TradeGPT pulls real-time data from multiple exchanges, analyzing price action, volume, and market sentiment.</p>
-          <ul class="space-y-1.5 text-xs text-gray-300">
-            <li class="flex items-center gap-2">
-              <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-              Live price feeds
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-              Volume analysis
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-              Market sentiment tracking
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-      <!-- Step 2 -->
-      <div class="group relative col-span-1">
-        <!-- Circle indicator - fixed positioning to match design -->
-        <div class="absolute -left-2 -top-2 w-10 h-10 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full flex items-center justify-center text-xl font-bold z-10">
-          2
-        </div>
-        <div class="p-5 pt-8 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-orange-500/30 hover:bg-white/10 transition-all duration-300 h-full">
-          <h3 class="text-lg font-semibold mb-3 text-white">Sentiment Analysis</h3>
-          <p class="text-gray-400 mb-3 text-sm">Our AI monitors social media, news, and market sentiment to gauge investor psychology and market mood.</p>
-          <ul class="space-y-1.5 text-xs text-gray-300">
-            <li class="flex items-center gap-2">
-              <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-              Fear & Greed Indicators
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-              News sentiment tracking
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-              Investor psychology indicators
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-      <!-- Step 3 -->
-      <div class="group relative col-span-1">
-        <!-- Circle indicator - fixed positioning to match design -->
-        <div class="absolute -left-2 -top-2 w-10 h-10 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full flex items-center justify-center text-xl font-bold z-10">
-          3
-        </div>
-        <div class="p-5 pt-8 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-orange-500/30 hover:bg-white/10 transition-all duration-300 h-full">
-          <h3 class="text-lg font-semibold mb-3 text-white">Macroeconomic Analysis</h3>
-          <p class="text-gray-400 mb-3 text-sm">TradeGPT evaluates economic indicators and global events that impact market movements and asset valuations.</p>
-          <ul class="space-y-1.5 text-xs text-gray-300">
-            <li class="flex items-center gap-2">
-              <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-              Interest rate impact
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-              Economic data analysis
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-              Global event correlation
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-      <!-- Step 4 -->
-      <div class="group relative col-span-1">
-        <!-- Circle indicator - fixed positioning to match design -->
-        <div class="absolute -left-2 -top-2 w-10 h-10 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full flex items-center justify-center text-xl font-bold z-10">
-          4
-        </div>
-        <div class="p-5 pt-8 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-orange-500/30 hover:bg-white/10 transition-all duration-300 h-full">
-          <h3 class="text-lg font-semibold mb-3 text-white">Technical Analysis</h3>
-          <p class="text-gray-400 mb-3 text-sm">Our AI processes multiple indicators simultaneously, identifying patterns human traders might miss.</p>
-          <ul class="space-y-1.5 text-xs text-gray-300">
-            <li class="flex items-center gap-2">
-              <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-              RSI & MACD analysis
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-              Support/resistance detection
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-              Pattern recognition
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-      <!-- Step 5 -->
-      <div class="group relative col-span-1">
-        <!-- Circle indicator - fixed positioning to match design -->
-        <div class="absolute -left-2 -top-2 w-10 h-10 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full flex items-center justify-center text-xl font-bold z-10">
-          5
-        </div>
-        <div class="p-5 pt-8 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-orange-500/30 hover:bg-white/10 transition-all duration-300 h-full">
-          <h3 class="text-lg font-semibold mb-3 text-white">Clear Signals</h3>
-          <p class="text-gray-400 mb-3 text-sm">Get straightforward BUY, SELL, or WAIT signals with entry points, targets, and stop-loss recommendations.</p>
-          <ul class="space-y-1.5 text-xs text-gray-300">
-            <li class="flex items-center gap-2">
-              <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-              Actionable trade signals
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-              Risk management guidance
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-1 h-1 bg-orange-400 rounded-full"></span>
-              Detailed reasoning
-            </li>
-          </ul>
-        </div>
-      </div>
+      ))}
     </div>
     
     <!-- Bottom CTA -->
     <div class="text-center">
       <p class="text-gray-300 mb-6 max-w-2xl mx-auto">
-        No more staring at charts for hours. TradeGPT does the heavy lifting so you can make informed decisions in seconds.
+        {bottomCTA.text}
       </p>
-      <a href="#pricing" class="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-orange-500/25">
-        Start Trading Smarter
+      <a href={bottomCTA.buttonLink} class="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-orange-500/25">
+        {bottomCTA.buttonText}
         <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
         </svg>
