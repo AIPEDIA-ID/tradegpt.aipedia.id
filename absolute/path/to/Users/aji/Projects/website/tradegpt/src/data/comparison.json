@@ -1,0 +1,40 @@
+{
+  "header": {
+    "title": {
+      "main": "Not Another",
+      "highlight": "Signal Scam"
+    },
+    "description": "Here's how TradeGPT differs from the typical \"crypto guru\" nonsense"
+  },
+  "comparison": {
+    "typical": {
+      "title": "Typical Signal Services",
+      "items": [
+        "Trust me bro\" signals with no reasoning",
+        "Pump their own bags with \"exclusive\" calls",
+        "$99/month recurring with hidden fees",
+        "Fake Lambos and rented mansions",
+        "Delete losing trades, highlight winners",
+        "FOMO tactics: \"Last chance!\" \"VIP only!\""
+      ]
+    },
+    "tradeGPT": {
+      "title": "TradeGPT Approach",
+      "items": [
+        "Every signal backed by technical reasoning",
+        "Objective analysis of liquid, major pairs only",
+        "$65 one-time payment, no subscriptions",
+        "Built by traders, for traders with day jobs",
+        "Transparent track record, no cherry-picking",
+        "Education-focused: Learn while you trade"
+      ]
+    }
+  },
+  "cta": {
+    "text": "No hype. No BS. Just clear signals when the setup is right.",
+    "button": {
+      "text": "Try It Now",
+      "link": "#pricing"
+    }
+  }
+}
