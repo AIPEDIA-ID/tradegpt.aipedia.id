@@ -21,8 +21,8 @@ import content from '../data/targetAudience.json';
         <div class="flex-1 min-w-64 p-6 rounded-lg bg-gray-900 border border-gray-800">
           <!-- Icon and Title -->
           <div class="flex items-center gap-4 mb-4">
-            <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center">
-              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class={`w-12 h-12 bg-gradient-to-br ${group.bgColor} rounded-lg flex items-center justify-center shadow-md border ${group.borderColor}`}>
+              <svg class="w-6 h-6 text-white drop-shadow-md" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={group.icon}></path>
               </svg>
             </div>
@@ -38,7 +38,7 @@ import content from '../data/targetAudience.json';
           <ul class="space-y-2">
             {group.benefits.map((benefit) => (
               <li class="flex items-start gap-2 text-gray-300 text-sm">
-                <span class="w-1.5 h-1.5 bg-orange-400 rounded-full mt-1.5 flex-shrink-0"></span>
+                <span class={`w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0 ${group.borderColor.replace('border-', 'bg-').replace('/30', '')}`}></span>
                 <span>{benefit}</span>
               </li>
             ))}

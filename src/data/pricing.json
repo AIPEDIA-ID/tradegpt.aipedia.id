@@ -23,8 +23,10 @@
       "features": [
         "Akses TradeGPT",
         "Panduan penggunaan lengkap",
+        "Template Excel Portfolio Tracker",
         "Template Excel trading plan",
         "eBook Crypto Trading Essentials",
+        "Grup private dan diskusi",
         "Jurnal & catatan mindset trading"
       ],
       "buttonText": "Langsung Akses Pro",
@@ -40,7 +42,7 @@
     { "value": "Rp0", "label": "Tanpa biaya bulanan" }
   ],
   "sectionHeader": {
-    "title": "Harga Jelas, Sekali Beli, Akses Selamanya",
+    "title": "Sekali Beli, Akses Selamanya",
     "subtitle": "Stop buang-buang uang langganan grup yang bayar setiap bulan"
   },
   "proTagline": "Kenapa banyak yang pilih Paket Pro:",
