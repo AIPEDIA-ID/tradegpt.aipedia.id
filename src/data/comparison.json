@@ -2,9 +2,9 @@
   "header": {
     "title": {
       "main": "Bukan Sekadar",
-      "highlight": "Sinyal Omdo"
+      "highlight": "Signal Omdo"
     },
-    "description": "Perbedaan TradeGPT dengan layanan sinyal abal-abal yang sering bikin boncos"
+    "description": "Perbedaan TradeGPT dengan layanan Signal abal-abal yang sering bikin boncos"
   },
   "comparison": {
     "typical": {
@@ -21,7 +21,7 @@
     "tradeGPT": {
       "title": "Cara Kerja TradeGPT",
       "items": [
-        "Setiap sinyal punya alasan teknikal yang jelas",
+        "Setiap Signal punya alasan teknikal yang jelas",
         "Analisis objektif untuk aset utama seperti BTC & ETH",
         "Bayar sekali, tanpa langganan bulanan",
         "Dibuat untuk trader yang punya kesibukan lain",
@@ -31,7 +31,7 @@
     }
   },
   "cta": {
-    "text": "Gak ada drama. Gak ada tipu-tipu. Hanya sinyal simple dengan setup kuat yang didasari analisa.",
+    "text": "Gak ada drama. Gak ada tipu-tipu. Hanya Signal simple dengan setup kuat yang didasari analisa.",
     "button": {
       "text": "Coba Sekarang",
       "link": "#pricing"

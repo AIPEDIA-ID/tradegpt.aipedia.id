@@ -1,7 +1,7 @@
 {
   "sectionHeader": {
     "title": "Cara Kerja TradeGPT",
-    "description": "Dari data market → jadi sinyal siap pakai. Gak ribet, langsung to the point."
+    "description": "Dari data market-> jadi Signal siap pakai. Gak ribet, langsung to the point."
   },
   "steps": [
     {
@@ -40,7 +40,7 @@
     {
       "number": 4,
       "title": "Analisa Teknikal Otomatis",
-      "description": "AI-nya scan RSI, MACD, pola harga — lebih cepat dari mata manusia.",
+      "description": "AI-nya scan RSI, MACD, pola harga -lebih cepat dari mata manusia.",
       "features": [
         "Multi-timeframe RSI & MACD",
         "Support/resistance key level",
@@ -49,10 +49,10 @@
     },
     {
       "number": 5,
-      "title": "Sinyal yang Clear dan berdasar",
-      "description": "Akhirnya kamu dapet sinyal BUY, SELL, atau WAIT, lengkap dengan alasan kenapanya, entry point, TP, dan SL.",
+      "title": "Signal yang Clear dan berdasar",
+      "description": "Akhirnya kamu dapet Signal BUY, SELL, atau WAIT, lengkap dengan alasan kenapanya, entry point, TP, dan SL.",
       "features": [
-        "Sinyal yang clear",
+        "Signal yang clear",
         "Rekomendasi risk management",
         "Penjelasan logika di baliknya"
       ]
@@ -60,7 +60,7 @@
   ],
   "bottomCTA": {
     "text": "Gak usah mantengin chart berjam-jam. TradeGPT yang kerja - kamu tinggal ambil keputusan.",
-    "buttonText": "Mulai Analisa",
+    "buttonText": "Mulai Trading",
     "buttonLink": "#pricing"
   }
 }

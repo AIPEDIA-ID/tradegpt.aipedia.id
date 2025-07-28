@@ -28,16 +28,16 @@
     "items": [
       { "text": "Analisa tren BTC Dominance", "color": "orange" },
       { "text": "Korelasi DXY & risiko pasar", "color": "orange" },
-      { "text": "Sinyal Fear & Greed Index", "color": "orange" }
+      { "text": "Signal Fear & Greed Index", "color": "orange" }
     ],
     "size": "small"
   },
   {
-    "title": "Sinyal Jelas & Sederhana",
-    "description": "Gak perlu buka chart ribet. Hanya tiga sinyal: BUY, SELL, atau WAIT — disertai penjelasan logis.",
+    "title": "Signal Jelas & Sederhana",
+    "description": "Gak perlu buka chart ribet. Hanya tiga Signal: BUY, SELL, atau WAIT -disertai penjelasan logis.",
     "icon": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z\"></path>",
     "items": [
-      { "text": "BUY: Ada sinyal kuat", "color": "green" },
+      { "text": "BUY: Ada Signal kuat", "color": "green" },
       { "text": "SELL: Jaga risiko & Take profit", "color": "red" },
       { "text": "WAIT: Market belum jelas", "color": "yellow" }
     ],
@@ -48,7 +48,7 @@
     "description": "TradeGPT menganalisis BTC, ETH, SOL, dan top altcoin.",
     "icon": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z\"></path>",
     "items": [
-      { "text": "Focus di aset crypto favoritmu", "color": "orange" },
+      { "text": "fokus di aset crypto favoritmu", "color": "orange" },
       { "text": "Hanya pair yang likuid", "color": "orange" },
       { "text": "Bisa buat watchlist sendiri", "color": "orange" },
       { "text": "Bisa kamu tentukan sendiri", "color": "orange" }

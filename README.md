@@ -1,13 +1,13 @@
 # TradeGPT
 
-TradeGPT adalah asisten trading berbasis AI yang memberikan sinyal trading crypto yang jelas dan terperinci. Dirancang untuk trader dengan pekerjaan tetap, TradeGPT menyediakan analisis teknikal dan makro ekonomi secara real-time.
+TradeGPT adalah asisten trading berbasis AI yang memberikan Signal trading crypto yang jelas dan terperinci. Dirancang untuk trader dengan pekerjaan tetap, TradeGPT menyediakan analisis teknikal dan makro ekonomi secara real-time.
 
 ## Fitur Utama
 
 - **Analisis Teknikal Live**: RSI, MACD, Bollinger Bands, dan analisis volume di semua timeframe utama
 - **Level Support & Resistance Cerdas**: Identifikasi otomatis zona support dan resistance dengan data pengujian historis
 - **Konteks Makro**: Analisis BTC dominance, DXY, Fear & Greed Index, dan sentimen pasar
-- **Sinyal Sederhana**: Rekomendasi BUY, SELL, atau WAIT yang jelas dengan penjelasan
+- **Signal Sederhana**: Rekomendasi BUY, SELL, atau WAIT yang jelas dengan penjelasan
 - **Semua Pair Utama**: Mencakup BTC, ETH, SOL, dan altcoin top lainnya
 
 ## Cara Kerja
@@ -20,13 +20,13 @@ TradeGPT adalah asisten trading berbasis AI yang memberikan sinyal trading crypt
 ## Paket Berlangganan
 
 ### Free Tier ($0)
-- 3 sinyal per hari
+- 3 Signal per hari
 - Analisis BTC & ETH
 - Indikator teknikal dasar
 - Ringkasan pasar harian
 
 ### Pro Tier ($65 one-time)
-- Sinyal tidak terbatas
+- Signal tidak terbatas
 - Semua pair crypto (20+ aset)
 - Analisis makro lanjutan
 - Level support & resistance
@@ -36,8 +36,8 @@ TradeGPT adalah asisten trading berbasis AI yang memberikan sinyal trading crypt
 
 ## FAQ
 
-- **Apa perbedaan dengan sinyal trading lainnya?** TradeGPT menjelaskan alasan di balik setiap sinyal menggunakan analisis teknikal dan faktor makro.
-- **Berapa waktu yang dibutuhkan?** Hanya 5 menit di pagi hari untuk memeriksa posisi dan sinyal baru. Persiapan akhir pekan membutuhkan 10-15 menit.
+- **Apa perbedaan dengan Signal trading lainnya?** TradeGPT menjelaskan alasan di balik setiap Signal menggunakan analisis teknikal dan faktor makro.
+- **Berapa waktu yang dibutuhkan?** Hanya 5 menit di pagi hari untuk memeriksa posisi dan Signal baru. Persiapan akhir pekan membutuhkan 10-15 menit.
 - **Apakah saya perlu menginstal sesuatu?** Tidak perlu instalasi. CustomGPT berjalan sepenuhnya melalui ChatGPT.
 - **Apakah ini nasihat finansial?** Tidak, ini adalah analisis edukasi. TradeGPT memberikan wawasan teknikal dan makro untuk membantu Anda membuat keputusan yang terinformasi.
 

@@ -1,16 +1,16 @@
 {
   "faqItems": [
     {
-      "question": "Apa bedanya TradeGPT dengan grup sinyal trading lainnya?",
-      "answer": "Most signals cuma kasih angka entry tanpa konteks. TradeGPT kasih kamu sinyal + alasan kenapa — pakai analisa teknikal, makro, dan indikator real-time. Jadi kamu gak cuma ikut-ikutan, tapi ngerti juga."
+      "question": "Apa bedanya TradeGPT dengan grup Signal trading lainnya?",
+      "answer": "Most signals cuma kasih angka entry tanpa konteks. TradeGPT kasih kamu Signal + alasan kenapa -pakai analisa teknikal, makro, dan indikator real-time. Jadi kamu gak cuma ikut-ikutan, tapi ngerti juga."
     },
     {
       "question": "Saya sibuk kerja. Butuh waktu berapa lama pakainya?",
-      "answer": "TradeGPT dibuat buat yang kerja full-time. Cukup 5 menit pagi buat cek posisi & sinyal. Weekend luangin 10–15 menit buat setup minggu depan. That’s it."
+      "answer": "TradeGPT dibuat buat yang kerja full-time atau punya kesibukan utama. Cukup 5-15 menit pagi buat cek posisi & Signal. That's it."
     },
     {
       "question": "Saya belum ngerti technical analysis. Masih bisa pakai?",
-      "answer": "Bisa banget, ambil yang pro dengan paket eBook. Setiap sinyal disertai reasoning-nya — kenapa BUY, kenapa WAIT, kenapa SELL. Kamu bakal ngerti RSI, MACD, support/resistance secara natural sambil jalan."
+      "answer": "Bisa banget, ambil yang pro dengan paket eBook. Setiap Signal disertai reasoning-nya -kenapa BUY, kenapa WAIT, kenapa SELL. Kamu bakal ngerti RSI, MACD, support/resistance secara natural sambil jalan."
     },
     {
       "question": "Perlu install software atau plugin?",
@@ -18,19 +18,19 @@
     },
     {
       "question": "Gimana cara akses TradeGPT setelah beli?",
-      "answer": "Setelah payment, kamu langsung dapet link GPT-nya. Klik → langsung bisa dipakai. No setup. No extension. Langsung chat aja."
+      "answer": "Setelah payment, kamu langsung dapet link GPT-nya. Klik-> langsung bisa dipakai. No setup. No extension. Langsung chat aja."
     },
     {
       "question": "Bisa dipakai di akun ChatGPT gratis?",
-      "answer": "Bisa. Tapi kalau kamu pakai ChatGPT Plus (GPT-4), hasilnya jauh lebih optimal — especially buat analisa teknikal dan penjelasan yang lebih presisi."
+      "answer": "Bisa. Tapi kalau kamu pakai ChatGPT Plus (GPT-4), hasilnya jauh lebih optimal -especially buat analisa teknikal dan penjelasan yang lebih presisi."
     },
     {
       "question": "Bisa tanya lanjutan atau minta analisa ulang?",
-      "answer": "Yes! Kamu bisa ajak ngobrol seperti asisten pribadi. Bisa minta breakdown sinyal, sesuaikan gaya trading kamu (swing/scalp), atau bahkan minta review portfolio kamu."
+      "answer": "Yes! Kamu bisa ajak ngobrol seperti asisten pribadi. Bisa minta breakdown Signal, sesuaikan gaya trading kamu (swing/scalp), atau bahkan minta review portfolio kamu."
     },
     {
       "question": "Kalau gak cocok, bisa refund?",
-      "answer": "Gak bisa. Karena setelah dibuka, aksesnya jadi milik kamu selamanya. Kalau ragu, ambil dulu Paket Basic sebelum upgrade ke Pro."
+      "answer": "Gak bisa. Karena setelah dibuka, aksesnya jadi milik kamu selamanya."
     }
   ]
 }

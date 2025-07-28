@@ -4,7 +4,7 @@
       "main": "Untuk siapa",
       "highlight": "TradeGPT?"
     },
-    "description": "TradeGPT dirancang khusus untuk trader yang ingin hasil maksimal dengan waktu minimal"
+    "description": "Dengan pre-trained data, TradeGPT dibuat untuk trader yang ingin hasil maksimal dengan waktu minimal"
   },
   "targetGroups": [
     {
@@ -57,7 +57,7 @@
     }
   ],
   "bottomNote": {
-    "text": "Tidak cocok untuk day trader atau scalper yang butuh signal setiap menit",
-    "subtext": "TradeGPT focus pada kualitas, bukan kuantitas signal"
+    "text": "Tidak cocok untuk hourly scalper yang butuh signal setiap menit",
+    "subtext": "TradeGPT fokus pada kualitas, bukan kuantitas signal"
   }
 }
