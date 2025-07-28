@@ -1,63 +1,66 @@
 {
   "sectionHeader": {
-    "title": "How TradeGPT Works",
-    "description": "From market data to actionable signals in seconds. No noise, just clear trading decisions."
+    "title": "Cara Kerja TradeGPT",
+    "description": "Dari data pasar → jadi sinyal siap pakai. Gak ribet, langsung to the point."
   },
   "steps": [
     {
       "number": 1,
-      "title": "Data Collection",
-      "description": "TradeGPT pulls real-time data from multiple exchanges, analyzing price action, volume, and market sentiment.",
+      "title": "Ngumpulin Data Live",
+      "description": "TradeGPT ngumpulin data real-time dari berbagai exchange, analisis harga, volume, dan pergerakan pasar.", 
       "features": [
-        "Live price feeds",
-        "Volume analysis",
-        "Market sentiment tracking"
+        "Live price feed dari market utama",
+        "Volume analysis biar gak kejebak false breakout",
+        "Sentimen pasar terpantau otomatis"
       ]
     },
     {
       "number": 2,
-      "title": "Sentiment Analysis",
-      "description": "Our AI monitors social media, news, and market sentiment to gauge investor psychology and market mood.",
+      "title": "Cek Sentimen Market",
+      "description": "AI-nya mantau social media, berita, dan Fear & Greed Index buat ngukur suasana pasar.",
       "features": [
-        "Fear & Greed Indicators",
-        "News sentiment tracking",
-        "Investor psychology indicators"
+        "Fear & Greed Index",
+        "News & headline sentiment",
+        "Analisis psikologi pasar",
+        "dll"
       ]
     },
     {
       "number": 3,
-      "title": "Macroeconomic Analysis",
-      "description": "TradeGPT evaluates economic indicators and global events that impact market movements and asset valuations.",
+      "title": "Baca Konteks Makro",
+      "description": "TradeGPT juga liat data ekonomi global: apakah ini momen risk-on atau risk-off?",
       "features": [
-        "Interest rate impact",
-        "Economic data analysis",
-        "Global event correlation"
+        "Dampak suku bunga & inflasi",
+        "Analisis data ekonomi penting",
+        "Korelasi event global vs crypto",
+        "Economic Calendar",
+        "dll"
       ]
     },
     {
       "number": 4,
-      "title": "Technical Analysis",
-      "description": "Our AI processes multiple indicators simultaneously, identifying patterns human traders might miss.",
+      "title": "Analisa Teknikal Otomatis",
+      "description": "AI-nya scan RSI, MACD, pola harga — lebih cepat dari mata manusia.",
       "features": [
-        "RSI & MACD analysis",
-        "Support/resistance detection",
-        "Pattern recognition"
+        "Multi-timeframe RSI & MACD",
+        "Support/resistance key level",
+        "Pola teknikal terdeteksi otomatis"
       ]
     },
     {
       "number": 5,
-      "title": "Clear Signals",
-      "description": "Get straightforward BUY, SELL, or WAIT signals with entry points, targets, and stop-loss recommendations.",
+      "title": "Sinyal yang Clear dan berdasar",
+      "description": "Akhirnya kamu dapet sinyal BUY, SELL, atau WAIT, lengkap dengan alasan kenapanya, entry point, TP, dan SL.",
       "features": [
-        "Actionable trade signals",
-        "Risk management guidance",
-        "Detailed reasoning"
+        "Sinyal yang clear",
+        "Rekomendasi risk management",
+        "Penjelasan logika di baliknya"
       ]
     }
   ],
   "bottomCTA": {
-    "text": "No more staring at charts for hours. TradeGPT does the heavy lifting so you can make informed decisions in seconds.",
-    "buttonText": "Start Trading Smarter",
+    "text": "Gak usah mantengin chart berjam-jam. TradeGPT yang kerja - kamu tinggal ambil keputusan.",
+    "buttonText": "Mulai Analisa",
     "buttonLink": "#pricing"
   }
 }
