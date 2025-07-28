@@ -1,26 +1,26 @@
 {
-  "badge": "Live Market Data",
+  "badge": "Live Market Insight",
   "logo": {
     "src": "/logo.png",
     "alt": "TradeGPT Logo"
   },
   "heading": {
-    "main": "Trading Lebih Cerdas",
+    "main": "Trading Crypto Cerdas",
     "highlight": "Dengan AI Assistant"
   },
-  "subheading1": "Gak perlu sinyal grup. TradeGPT bantu kamu <strong class=\"text-white\">BUY</strong>, <strong class=\"text-white\">SELL</strong>, atau <strong class=\"text-white\">WAIT</strong>, berdasarkan analisa teknikal dan makro yang bisa kamu pahami dan pelajari sendiri.",
-  "subheading2": "CustomGPT yang dirancang untuk bantu kamu ambil keputusan sendiri. Cocok buat yang sibuk, baru belajar, atau gak mau ribet mantengin chart.",
+  "subheading1": "TradeGPT bantu kamu ambil keputusan <strong class=\"text-white\">BUY</strong>, <strong class=\"text-white\">SELL</strong>, atau <strong class=\"text-white\">WAIT</strong> — pakai data RSI, MACD, dan kondisi makro.",
+  "subheading2": "Cocok buat kamu yang sibuk kerja, baru belajar, atau males mantengin chart tiap hari.",
   "cta": [
     {
-      "text": "Coba Sekarang",
+      "text": "Mulai Sekarang - Rp97rb",
       "href": "#pricing",
       "isPrimary": true
     },
     {
-      "text": "Lihat Cara Kerjanya",
-      "href": "#how-it-works",
+      "text": "Lihat Contoh Analisa",
+      "href": "#see-in-actions",
       "isPrimary": false
     }
   ],
-  "socialProof": "Dipakai 150++ trader &karyawan"
+  "socialProof": "Dipercaya 150+ trader aktif & pekerja kantoran"
 }

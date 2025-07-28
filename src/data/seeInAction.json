@@ -1,32 +1,32 @@
 {
   "galleryImages": [
     {
-      "src": "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "src": "/screenshots/1.png",
       "alt": "TradeGPT Demo 1"
     },
     {
-      "src": "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "src": "/screenshots/2.png",
       "alt": "TradeGPT Demo 2"
     },
     {
-      "src": "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "src": "/screenshots/3.png",
       "alt": "TradeGPT Demo 3"
     },
     {
-      "src": "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "src": "/screenshots/4.png",
       "alt": "TradeGPT Demo 4"
     },
     {
-      "src": "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+      "src": "/screenshots/5.png",
       "alt": "TradeGPT Demo 5"
     },
     {
-      "src": "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg",
+      "src": "/screenshots/6.png",
       "alt": "TradeGPT Demo 6"
     }
   ],
   "content": {
-    "title": "Lihat bagaimana cara kerja",
+    "title": "Bagaimana analisa oleh",
     "brandName": "TradeGPT",
     "subtitle": "Cobalah TradeGPT di sini dan lihat bagaimana cara kerja TradeGPT"
   }
