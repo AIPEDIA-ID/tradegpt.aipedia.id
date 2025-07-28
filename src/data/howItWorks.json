@@ -1,0 +1,63 @@
+{
+  "sectionHeader": {
+    "title": "How TradeGPT Works",
+    "description": "From market data to actionable signals in seconds. No noise, just clear trading decisions."
+  },
+  "steps": [
+    {
+      "number": 1,
+      "title": "Data Collection",
+      "description": "TradeGPT pulls real-time data from multiple exchanges, analyzing price action, volume, and market sentiment.",
+      "features": [
+        "Live price feeds",
+        "Volume analysis",
+        "Market sentiment tracking"
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Sentiment Analysis",
+      "description": "Our AI monitors social media, news, and market sentiment to gauge investor psychology and market mood.",
+      "features": [
+        "Fear & Greed Indicators",
+        "News sentiment tracking",
+        "Investor psychology indicators"
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Macroeconomic Analysis",
+      "description": "TradeGPT evaluates economic indicators and global events that impact market movements and asset valuations.",
+      "features": [
+        "Interest rate impact",
+        "Economic data analysis",
+        "Global event correlation"
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Technical Analysis",
+      "description": "Our AI processes multiple indicators simultaneously, identifying patterns human traders might miss.",
+      "features": [
+        "RSI & MACD analysis",
+        "Support/resistance detection",
+        "Pattern recognition"
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Clear Signals",
+      "description": "Get straightforward BUY, SELL, or WAIT signals with entry points, targets, and stop-loss recommendations.",
+      "features": [
+        "Actionable trade signals",
+        "Risk management guidance",
+        "Detailed reasoning"
+      ]
+    }
+  ],
+  "bottomCTA": {
+    "text": "No more staring at charts for hours. TradeGPT does the heavy lifting so you can make informed decisions in seconds.",
+    "buttonText": "Start Trading Smarter",
+    "buttonLink": "#pricing"
+  }
+}

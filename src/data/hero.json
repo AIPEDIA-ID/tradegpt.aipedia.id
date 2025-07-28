@@ -1,0 +1,26 @@
+{
+  "badge": "Live Market Data",
+  "logo": {
+    "src": "/logo.png",
+    "alt": "TradeGPT Logo"
+  },
+  "heading": {
+    "main": "Trade Smarter with",
+    "highlight": "TradeGPT"
+  },
+  "subheading1": "No FOMO. Just <strong class=\"text-white\">BUY</strong>, <strong class=\"text-white\">SELL</strong>, or <strong class=\"text-white\">WAIT</strong> signals",
+  "subheading2": "Trained CustomGPT backed by live RSI, MACD, support/resistance, macro data, etc. Perfect for traders with a day job.",
+  "cta": [
+    {
+      "text": "Try It Now",
+      "href": "#pricing",
+      "isPrimary": true
+    },
+    {
+      "text": "How It Works",
+      "href": "#how-it-works",
+      "isPrimary": false
+    }
+  ],
+  "socialProof": "2,400+ traders trust TradeGPT"
+}
