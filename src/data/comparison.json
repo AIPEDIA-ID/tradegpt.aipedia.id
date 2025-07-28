@@ -1,39 +1,39 @@
 {
   "header": {
     "title": {
-      "main": "Not Another",
-      "highlight": "Signal Scam"
+      "main": "Bukan Sekadar",
+      "highlight": "Sinyal Omdo"
     },
-    "description": "Here's how TradeGPT differs from the typical \"crypto guru\" nonsense"
+    "description": "Perbedaan TradeGPT dengan layanan sinyal abal-abal yang sering bikin boncos"
   },
   "comparison": {
     "typical": {
-      "title": "Typical Signal Services",
+      "title": "Trading Signal Abal-Abal",
       "items": [
-        "Trust me bro\" signals with no reasoning",
-        "Pump their own bags with \"exclusive\" calls",
-        "$99/month recurring with hidden fees",
-        "Fake Lambos and rented mansions",
-        "Delete losing trades, highlight winners",
-        "FOMO tactics: \"Last chance!\" \"VIP only!\""
+        "Asal tebak tanpa alasan teknikal",
+        "Numpang cuan dengan call buat nyangkutin follower",
+        "Bayar bulanan mahal, plus biaya tersembunyi",
+        "Pamer gaya hidup palsu biar kelihatan sultan",
+        "Cuma tunjukin trade yang profit, yang rugi dihapus",
+        "Suka maksa beli: \"Last call!\" \"Grup VIP tinggal 3 slot!\""
       ]
     },
     "tradeGPT": {
-      "title": "TradeGPT Approach",
+      "title": "Cara Kerja TradeGPT",
       "items": [
-        "Every signal backed by technical reasoning",
-        "Objective analysis of liquid, major pairs only",
-        "$65 one-time payment, no subscriptions",
-        "Built by traders, for traders with day jobs",
-        "Transparent track record, no cherry-picking",
-        "Education-focused: Learn while you trade"
+        "Setiap sinyal punya alasan teknikal yang jelas",
+        "Analisis objektif untuk aset utama seperti BTC & ETH",
+        "Bayar sekali, tanpa langganan bulanan",
+        "Dibuat untuk trader yang punya kesibukan lain",
+        "Semua analisa transparan, gak ada manipulasi",
+        "Fokus edukasi: kamu bisa belajar sambil trading"
       ]
     }
   },
   "cta": {
-    "text": "No hype. No BS. Just clear signals when the setup is right.",
+    "text": "Gak ada drama. Gak ada tipu-tipu. Hanya sinyal simple dengan setup kuat yang didasari analisa.",
     "button": {
-      "text": "Try It Now",
+      "text": "Coba Sekarang",
       "link": "#pricing"
     }
   }
