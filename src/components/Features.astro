@@ -29,14 +29,14 @@ import features from '../data/features.json';
           </div>
           <h3 class={`text-${feature.size === 'large' ? 'xl' : 'lg'} font-semibold mb-${feature.size === 'large' ? '4' : '3'} text-white`}>{feature.title}</h3>
           <p class={`text-gray-400 mb-${feature.size === 'large' ? '4' : '3'} ${feature.size === 'large' ? '' : 'text-sm'}`}>{feature.description}</p>
-          <ul class={`space-y-${feature.size === 'large' ? '2' : '1.5'} ${feature.size === 'large' ? 'text-sm' : 'text-xs'} text-gray-300`}>
+          {/* <ul class={`space-y-${feature.size === 'large' ? '2' : '1.5'} ${feature.size === 'large' ? 'text-sm' : 'text-xs'} text-gray-300`}>
             {feature.items.map((item) => (
               <li class="flex items-center gap-2">
                 <span class={`w-${feature.size === 'large' ? '1.5' : '1'} h-${feature.size === 'large' ? '1.5' : '1'} bg-${item.color}-400 rounded-full`}></span>
                 {item.text}
               </li>
             ))}
-          </ul>
+          </ul> */}
         </div>
       ))}
     </div>
