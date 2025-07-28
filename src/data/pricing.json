@@ -38,5 +38,11 @@
     { "value": "30 hari", "label": "Akses TradeGPT" },
     { "value": "2 pilihan", "label": "Paket fleksibel" },
     { "value": "Rp0", "label": "Tanpa biaya bulanan" }
-  ]
+  ],
+  "sectionHeader": {
+    "title": "Harga Jelas, Sekali Beli, Akses Selamanya",
+    "subtitle": "Stop buang-buang uang langganan grup yang bayar setiap bulan"
+  },
+  "proTagline": "Kenapa banyak yang pilih Paket Pro:",
+  "proFooter": "Akses seumur hidup. Bayar sekali, selesai."
 }
