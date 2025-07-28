@@ -1,15 +1,15 @@
 {
-  "badge": "Powered by AI",
+  "badge": "Live Market Data",
   "logo": {
     "src": "/logo.png",
     "alt": "TradeGPT Logo"
   },
   "heading": {
-    "main": "Trading Smart dengan AI",
-    "highlight": "Untuk Kamu yg Sibuk"
+    "main": "Trading Lebih Cerdas",
+    "highlight": "Dengan AI Assistant"
   },
-  "subheading1": "Gak perlu tunggu sinyal grup. TradeGPT bantu kamu <strong class=\"text-white\">BUY</strong>, <strong class=\"text-white\">SELL</strong>, atau <strong class=\"text-white\">WAIT</strong>, pakai logika dan analisa dan kamu bisa tentukan sendiri tradingnya.",
-  "subheading2": "CustomGPT berbasis AI yang ditraine dengan berbagai macam pre-trained data untuk baca indikator teknikal & makro - bantu kamu analisa secara mandiri. Cocok buat trader sambilan atau yang baru belajar.",
+  "subheading1": "Gak perlu sinyal grup. TradeGPT bantu kamu <strong class=\"text-white\">BUY</strong>, <strong class=\"text-white\">SELL</strong>, atau <strong class=\"text-white\">WAIT</strong>, berdasarkan analisa teknikal dan makro yang bisa kamu pahami dan pelajari sendiri.",
+  "subheading2": "CustomGPT yang dirancang untuk bantu kamu ambil keputusan sendiri. Cocok buat yang sibuk, baru belajar, atau gak mau ribet mantengin chart.",
   "cta": [
     {
       "text": "Coba Sekarang",
@@ -22,5 +22,5 @@
       "isPrimary": false
     }
   ],
-  "socialProof": "Dipakai oleh 2.400+ pengguna untuk trading sambil kerja"
+  "socialProof": "Dipakai 150++ trader &karyawan"
 }

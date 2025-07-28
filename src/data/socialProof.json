@@ -1,10 +1,10 @@
 {
   "header": {
     "title": {
-      "main": "Trusted by",
-      "highlight": "Smart Traders"
+      "main": "Dipercaya oleh",
+      "highlight": "Trader Cerdas"
     },
-    "description": "Real feedback from traders who've improved their results with TradeGPT"
+    "description": "Testimoni nyata dari pengguna yang terbantu ambil keputusan lebih tepat dengan TradeGPT"
   },
   "testimonials": [
     {
@@ -12,9 +12,9 @@
         "initial": "M",
         "gradient": "from-blue-400 to-blue-600"
       },
-      "name": "Marcus Chen",
-      "role": "Software Engineer & Swing Trader",
-      "quote": "Finally, a tool that gets it. I don't have time to stare at charts all day. TradeGPT gives me the context I need in 5 minutes each morning. My hit rate went from 40% to 65% in two months.",
+      "name": "Mase",
+      "role": "Karyawan & Swing Trader",
+      "quote": "Gue suka karena analisa teknikalnya langsung ke poin. Gak perlu buka chart ribet, tapi tetap ngerti kenapa sinyalnya muncul.",
       "rating": 5
     },
     {
@@ -22,16 +22,15 @@
         "initial": "S",
         "gradient": "from-green-400 to-green-600"
       },
-      "name": "Sarah Martinez",
-      "role": "Marketing Director & Part-time Trader",
-      "quote": "The macro context is what sold me. Understanding why BTC is moving based on DXY and BTC dominance changed my approach completely. No more random entries based on hopium.",
+      "name": "Sarah",
+      "role": "Digital Marketer & Part-time Trader",
+      "quote": "Yang bikin saya yakin itu bagian makronya. Bisa ngerti kenapa BTC gerak karena DXY dan BTC.D akhirnya saya stop entry random pakai feeling.",
       "rating": 5
     }
   ],
   "stats": [
-    { "value": "2,400+", "label": "Active Traders" },
-    { "value": "65%", "label": "Avg Win Rate" },
-    { "value": "5min", "label": "Daily Usage" },
-    { "value": "4.8/5", "label": "User Rating" }
+    { "value": "150+", "label": "Trader Aktif" },
+    { "value": "5-15 menit", "label": "Rata-rata waktu per hari" },
+    { "value": "4.8/5", "label": "Rating Pengguna" }
   ]
 }
