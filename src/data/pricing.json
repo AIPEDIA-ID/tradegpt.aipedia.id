@@ -2,15 +2,14 @@
   "pricingTiers": [
     {
       "name": "Basic Assistant",
-      "price": "Rp97k",
-      "description": "Perfect to get started",
+      "price": "Rp97rb",
+      "description": "Untuk kamu yang ingin langsung mulai",
       "features": [
-        "3 signals per day",
-        "BTC & ETH analysis",
-        "Basic technical indicators",
-        "Daily market summary"
+        "Akses TradeGPT",
+        "Panduan penggunaan lengkap",
+        "Template Excel trading plan"
       ],
-      "buttonText": "Start Free",
+      "buttonText": "Akses Basic",
       "buttonLink": "#",
       "isPopular": false,
       "buttonClass": "w-full py-3 px-4 bg-white/10 hover:bg-white/20 text-white font-medium rounded-lg border border-white/20 hover:border-orange-500/30 transition-all duration-200",
@@ -18,19 +17,17 @@
     },
     {
       "name": "Pro Assistant",
-      "price": "Rp167k",
-      "priceSubtext": "one-time",
-      "description": "Everything you need to trade smart",
+      "price": "Rp167rb",
+      "priceSubtext": "sekali bayar",
+      "description": "Cocok untuk pemula yang ingin belajar crypto, lalu trading lebih percaya diri",
       "features": [
-        "Unlimited signals",
-        "All crypto pairs (20+ assets)",
-        "Advanced macro analysis",
-        "Support & resistance levels",
-        "Custom watchlists",
-        "Risk management tools",
-        "Priority support"
+        "Akses TradeGPT",
+        "Panduan penggunaan lengkap",
+        "Template Excel trading plan",
+        "eBook Crypto Trading Essentials",
+        "Jurnal & catatan mindset trading"
       ],
-      "buttonText": "Get Pro Access",
+      "buttonText": "Langsung Akses Pro",
       "buttonLink": "https://remote.myr.id/pl/tradegpt",
       "isPopular": true,
       "buttonClass": "block w-full py-3 px-4 bg-gradient-to-r from-orange-400 to-orange-600 hover:from-orange-500 hover:to-orange-700 text-white font-medium rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-orange-500/25 text-center",
@@ -38,8 +35,8 @@
     }
   ],
   "proStats": [
-    { "value": "20+", "label": "Crypto pairs covered" },
-    { "value": "5min", "label": "Daily time investment" },
-    { "value": "$0", "label": "Monthly fees (one-time)" }
+    { "value": "30 hari", "label": "Akses TradeGPT" },
+    { "value": "2 pilihan", "label": "Paket fleksibel" },
+    { "value": "Rp0", "label": "Tanpa biaya bulanan" }
   ]
 }
