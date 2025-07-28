@@ -3,7 +3,7 @@
 import heroData from '../data/hero.json';
 ---
 
-<section id="hero" class="relative min-h-screen flex items-center justify-center px-6 py-16 overflow-hidden">
+<section id="hero" class="relative min-h-screen flex items-center justify-center px-6 py-14 overflow-hidden">
   <!-- Background Elements -->
   <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-900"></div>
   <div class="absolute top-20 left-10 w-64 h-64 bg-orange-500/10 rounded-full blur-[100px] animate-pulse-slow"></div>
@@ -17,19 +17,29 @@ import heroData from '../data/hero.json';
     </div>
     <!-- Logo -->
     <div class="flex items-center justify-center mb-4">
-      <img src={heroData.logo.src} alt={heroData.logo.alt} class="w-16 h-16" />
+      <img src={heroData.logo.src} alt={heroData.logo.alt} class="w-14 h-14" />
     </div>
-    <h1 class="text-4xl md:text-6xl font-bold mb-5 leading-tight">
+    <h1 class="text-3xl md:text-4xl font-bold mb-5 leading-tight">
       {heroData.heading.main} <br />
       <span class="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">{heroData.heading.highlight}</span>
     </h1>
     
-    <p class="text-lg md:text-xl text-gray-300 mb-3 max-w-2xl mx-auto" set:html={heroData.subheading1}></p>
+    <p class="text-base md:text-sm text-gray-300 mb-3 max-w-xl mx-auto" set:html={heroData.subheading1}></p>
     
-    <p class="text-base text-gray-400 mb-10 max-w-xl mx-auto">
+    <!-- <p class="text-base text-gray-400 mb-10 max-w-xl mx-auto">
       {heroData.subheading2}
-    </p>
-    
+    </p> -->
+    <div class="max-w-3xl w-full px-4 mx-auto mb-5">
+      <div class="p-[2px] rounded-xl bg-gradient-to-r from-white/30 via-white/10 to-orange-500/30">
+        <img 
+          src="/screenshots/hero.png" 
+          alt="Preview Hero" 
+          class="w-full object-contain rounded-xl bg-black block" 
+          loading="lazy"
+        />
+      </div>
+    </div>
+
     <!-- CTA Buttons -->
     <div class="flex flex-col sm:flex-row gap-3 justify-center items-center mb-12">
       {heroData.cta.map((button) => (
