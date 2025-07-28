@@ -1,7 +1,7 @@
 {
   "faqItems": [
     {
-      "question": "Apa bedanya TradeGPT dengan sinyal trading lainnya?",
+      "question": "Apa bedanya TradeGPT dengan grup sinyal trading lainnya?",
       "answer": "Most signals cuma kasih angka entry tanpa konteks. TradeGPT kasih kamu sinyal + alasan kenapa — pakai analisa teknikal, makro, dan indikator real-time. Jadi kamu gak cuma ikut-ikutan, tapi ngerti juga."
     },
     {
@@ -10,11 +10,11 @@
     },
     {
       "question": "Saya belum ngerti technical analysis. Masih bisa pakai?",
-      "answer": "Bisa banget. Setiap sinyal disertai reasoning-nya — kenapa BUY, kenapa WAIT, kenapa SELL. Kamu bakal ngerti RSI, MACD, support/resistance secara natural sambil jalan."
+      "answer": "Bisa banget, ambil yang pro dengan paket eBook. Setiap sinyal disertai reasoning-nya — kenapa BUY, kenapa WAIT, kenapa SELL. Kamu bakal ngerti RSI, MACD, support/resistance secara natural sambil jalan."
     },
     {
       "question": "Perlu install software atau plugin?",
-      "answer": "Nope. TradeGPT jalan 100% lewat ChatGPT. Bisa diakses langsung via browser atau app, tanpa instalasi apapun."
+      "answer": "Tidak. TradeGPT jalan 100% lewat ChatGPT. Bisa diakses langsung via browser atau app, tanpa instalasi apapun."
     },
     {
       "question": "Gimana cara akses TradeGPT setelah beli?",
@@ -27,18 +27,6 @@
     {
       "question": "Bisa tanya lanjutan atau minta analisa ulang?",
       "answer": "Yes! Kamu bisa ajak ngobrol seperti asisten pribadi. Bisa minta breakdown sinyal, sesuaikan gaya trading kamu (swing/scalp), atau bahkan minta review portfolio kamu."
-    },
-    {
-      "question": "Apa bedanya Paket Basic dan Paket Pro?",
-      "answer": "Paket Basic: Akses ke TradeGPT + panduan penggunaan. Paket Pro: Semua fitur Basic PLUS eBook lengkap dan template Portfolio Tracker buat catat posisi kamu dengan rapi."
-    },
-    {
-      "question": "Kenapa gak pakai sistem langganan bulanan?",
-      "answer": "Karena CustomGPT bisa langsung diakses lewat ChatGPT — gak perlu subscription dari kami. So, you just pay once and use it anytime. Simple as that."
-    },
-    {
-      "question": "Is this financial advice?",
-      "answer": "Nope. Ini bukan ajakan beli/jual. TradeGPT bantu kamu ambil keputusan berdasarkan data teknikal dan makro — tapi keputusan tetap di tangan kamu. DYOR always."
     },
     {
       "question": "Kalau gak cocok, bisa refund?",
