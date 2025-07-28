@@ -49,6 +49,7 @@ const { pricingTiers, proStats, sectionHeader, proTagline, proFooter } = pricing
             ))}
           </div>
           
+          <div class="w-full flex justify-center">
           {tier.buttonLink.startsWith('http') ? (
             <a href={tier.buttonLink} class={tier.buttonClass}>
               {tier.buttonText}
@@ -58,6 +59,7 @@ const { pricingTiers, proStats, sectionHeader, proTagline, proFooter } = pricing
               {tier.buttonText}
             </button>
           )}
+          </div>
           
           {tier.isPopular && (
             <p class="text-center text-xs text-gray-400 mt-3">
