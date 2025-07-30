@@ -1,69 +1,67 @@
 [
   {
-    "title": "Analisa Teknikal Live",
-    "description": "TradeGPT membaca RSI, MACD, dan volume secara live untuk bantu kamu ambil keputusan tanpa tebak-tebakan.",
+    "title": "Analisa Market Menyeluruh",
+    "description": "TradeGPT membaca data teknikal dan makroekonomi secara real-time untuk bantu kamu ambil keputusan BUY, SELL, atau WAIT dengan dasar yang jelas.",
     "icon": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z\"></path>",
     "items": [
-      { "text": "RSI 4H & Daily otomatis", "color": "orange" },
-      { "text": "Deteksi divergence MACD", "color": "orange" },
-      { "text": "Volume & momentum check", "color": "orange" }
+      { "text": "RSI, MACD, volume, divergence", "color": "orange" },
+      { "text": "Support/resistance & breakout key level", "color": "orange" },
+      { "text": "DXY, BTC Dominance, Fear & Greed Index", "color": "orange" }
     ],
     "size": "small"
   },
   {
-    "title": "Level Support & Resistance",
-    "description": "TradeGPT mengenali area penting harga dengan data historis dan bantu kamu tahu momen break atau retest.",
-    "icon": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z\"></path>",
+    "title": "Signal yang Jelas & Siap Pakai",
+    "description": "Gak perlu buka chart ribet. TradeGPT beri sinyal sederhana disertai alasan teknikal dan risk management yang transparan.",
+    "icon": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>",
     "items": [
-      { "text": "Level dinamis, bukan statis", "color": "orange" },
-      { "text": "Notifikasi break/retest", "color": "orange" },
-      { "text": "Simulasi rasio risk/reward", "color": "orange" }
+      { "text": "BUY: Momentum dan setup teknikal kuat", "color": "green" },
+      { "text": "SELL: Ada potensi reversal atau target tercapai", "color": "red" },
+      { "text": "WAIT: Market belum jelas, hindari entry impulsif", "color": "yellow" }
     ],
     "size": "small"
   },
   {
-    "title": "Konteks Makroekonomi",
-    "description": "Pantau BTC Dominance, DXY, dan Fear & Greed Index, semua disusun jadi insight siap pakai.",
-    "icon": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z\"></path>",
+    "title": "Ditrain Khusus untuk Dunia Crypto",
+    "description": "TradeGPT bukan chatbot umum. Ia dilatih dengan data teknikal & makro agar bisa kasih analisa yang relevan dan kontekstual untuk crypto market.",
+    "icon": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 4v1m0 14v1m8-8h1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.021 0l-.707-.707M6.343 6.343l-.707-.707M16 12a4 4 0 11-8 0 4 4 0 018 0z\"></path>",
     "items": [
-      { "text": "Analisa tren BTC Dominance", "color": "orange" },
-      { "text": "Korelasi DXY & risiko pasar", "color": "orange" },
-      { "text": "Signal Fear & Greed Index", "color": "orange" }
+      { "text": "Model dilatih dengan data trading & indikator populer", "color": "orange" },
+      { "text": "Paham struktur market, bukan cuma teks", "color": "orange" },
+      { "text": "Output analisa to-the-point dan siap dieksekusi", "color": "orange" }
     ],
     "size": "small"
   },
   {
-    "title": "Signal Jelas & Sederhana",
-    "description": "Gak perlu buka chart ribet. Hanya tiga Signal: BUY, SELL, atau WAIT -disertai penjelasan logis.",
-    "icon": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z\"></path>",
+    "title": "Bisa Tanya Kalau Gak Paham",
+    "description": "Gak semua sinyal langsung bisa dipahami. Kamu bebas tanya ulang ke TradeGPT untuk dijelaskan secara logis dan mudah dimengerti.",
+    "icon": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M17 8h2a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V10a2 2 0 012-2h2m10-4H7a2 2 0 00-2 2v0a2 2 0 002 2h10a2 2 0 002-2v0a2 2 0 00-2-2z\"></path>",
     "items": [
-      { "text": "BUY: Ada Signal kuat", "color": "green" },
-      { "text": "SELL: Jaga risiko & Take profit", "color": "red" },
-      { "text": "WAIT: Market belum jelas", "color": "yellow" }
+      { "text": "Tanya kenapa sinyalnya muncul, dan dapat breakdown-nya", "color": "orange" },
+      { "text": "Minta penjelasan indikator atau simulasi strategi", "color": "orange" },
+      { "text": "Cocok buat yang pengen belajar sambil praktek", "color": "orange" }
     ],
     "size": "small"
   },
   {
-    "title": "Fokus ke Aset Utama",
-    "description": "TradeGPT menganalisis BTC, ETH, SOL, dan top altcoin.",
-    "icon": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z\"></path>",
+    "title": "Fleksibel Pilih Aset Favorit",
+    "description": "TradeGPT mendukung analisa aset populer seperti BTC, ETH, SOL, BNB dan bisa disesuaikan dengan coin favorit kamu selama tersedia datanya.",
+    "icon": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M3 7h18M3 12h18M3 17h18\"></path>",
     "items": [
-      { "text": "fokus di aset crypto favoritmu", "color": "orange" },
-      { "text": "Hanya pair yang likuid", "color": "orange" },
-      { "text": "Bisa buat watchlist sendiri", "color": "orange" },
-      { "text": "Bisa kamu tentukan sendiri", "color": "orange" }
+      { "text": "Default: BTC, ETH, BNB, SOL, dll", "color": "orange" },
+      { "text": "Bisa request coin populer seperti ARB, OP, DOGE, dll", "color": "orange" },
+      { "text": "Data real-time dari Binance, Bybit, OKX, dst", "color": "orange" }
     ],
     "size": "small"
   },
   {
-    "title": "Untuk yang Punya Kesibukan",
-    "description": "Cukup luangkan 5 menit per hari. Cocok untuk kamu yang kerja full-time.",
+    "title": "Cocok untuk yang Sibuk",
+    "description": "TradeGPT dirancang untuk trader yang punya kesibukan lain. Cukup luangkan waktu 5–10 menit per hari untuk ambil keputusan.",
     "icon": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z\"></path>",
     "items": [
-      { "text": "Summary harian", "color": "orange" },
-      { "text": "Peringatan level penting", "color": "orange" },
-      { "text": "Persiapan akhir pekan", "color": "orange" },
-      { "text": "Bisa sambil belajar", "color": "orange" }
+      { "text": "Rangkuman analisa harian siap baca", "color": "orange" },
+      { "text": "Peringatan level penting & setup potensial", "color": "orange" },
+      { "text": "Hemat waktu, tetap bisa cuan", "color": "orange" }
     ],
     "size": "small"
   }

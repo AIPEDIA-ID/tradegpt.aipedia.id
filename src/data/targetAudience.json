@@ -4,60 +4,60 @@
       "main": "Untuk siapa",
       "highlight": "TradeGPT?"
     },
-    "description": "Dengan pre-trained data, TradeGPT dibuat untuk trader yang ingin hasil maksimal dengan waktu minimal"
+    "description": "TradeGPT dirancang untuk kamu yang mau hasil profesional, tapi gak punya waktu atau tenaga buat mantengin chart atau belajar teknikal dari nol."
   },
   "targetGroups": [
     {
       "title": "Pekerja Kantoran",
-      "description": "Punya kerja full-time tapi ingin profit dari trading? TradeGPT cocok untuk Anda.",
+      "description": "Punya kerja full-time tapi tetap ingin profit dari crypto? TradeGPT bantu kamu cek market dalam 5 menit tiap pagi — tanpa ribet buka chart.",
       "icon": "M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0H8m8 0v2a2 2 0 01-2 2H10a2 2 0 01-2-2V6m8 0H8",
       "benefits": [
         "5 menit check pagi hari",
-        "Tidak perlu pantau chart seharian",
-        "Signal dengan alasan jelas"
+        "Gak perlu pantau chart seharian",
+        "Sinyal disertai penjelasan"
       ],
       "bgColor": "from-blue-500/10 to-blue-600/5",
       "borderColor": "border-blue-500/30"
     },
     {
-      "title": "Swing Traders",
-      "description": "Fokus pada pergerakan jangka menengah dengan analisis teknikal yang solid.",
+      "title": "Yang ingin cari penghasilan tambahan",
+      "description": "Fokus pada pergerakan harian atau mingguan? TradeGPT bantu kamu lihat trend, support/resistance, dan rasio risk-reward otomatis.",
       "icon": "M13 7L9 12H15L11 17M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z",
       "benefits": [
-        "Analisis 4H & Daily timeframe",
-        "Support/resistance levels",
-        "Risk/reward ratio jelas"
+        "Analisa 4H & Daily",
+        "Support/resistance otomatis",
+        "Rasio risk/reward dikalkulasi"
       ],
       "bgColor": "from-orange-500/10 to-orange-600/5",
       "borderColor": "border-orange-500/30"
     },
     {
-      "title": "Pemula yang Serius",
-      "description": "Baru di crypto tapi ingin belajar dengan cara yang benar dan terstruktur.",
+      "title": "Pemula yg mau belajar",
+      "description": "Baru mulai belajar trading? TradeGPT bantu kamu ngerti analisa teknikal secara bertahap lewat sinyal + penjelasan yang masuk akal.",
       "icon": "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253",
       "benefits": [
         "Belajar sambil trading",
-        "Penjelasan setiap signal",
-        "Dasar analisis teknikal"
+        "Tiap sinyal dijelaskan kenapanya",
+        "Paham indikator tanpa kursus mahal"
       ],
       "bgColor": "from-green-500/10 to-green-600/5",
       "borderColor": "border-green-500/30"
     },
     {
       "title": "Trader Berpengalaman",
-      "description": "Sudah mahir trading tapi butuh konfirmasi dan perspektif tambahan.",
+      "description": "Sudah biasa analisa sendiri tapi butuh second opinion? TradeGPT bantu kamu validasi keputusan dengan data real-time makro & teknikal.",
       "icon": "M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z",
       "benefits": [
-        "Second opinion berkualitas",
-        "Macro context analysis",
-        "Cross-validation setup"
+        "Second opinion dari AI",
+        "Pantau fear & greed, DXY, BTC.D",
+        "Cross-check setup personal"
       ],
       "bgColor": "from-purple-500/10 to-purple-600/5",
       "borderColor": "border-purple-500/30"
     }
   ],
   "bottomNote": {
-    "text": "Tidak cocok untuk hourly scalper yang butuh signal setiap menit",
-    "subtext": "TradeGPT fokus pada kualitas, bukan kuantitas signal"
+    "text": "Tidak cocok untuk hourly scalper",
+    "subtext": "TradeGPT fokus pada kualitas sinyal, bukan kuantitas."
   }
 }
