@@ -4,34 +4,36 @@
       "main": "Bukan Sekadar",
       "highlight": "Signal Omdo"
     },
-    "description": "Perbedaan TradeGPT dengan layanan Signal abal-abal yang sering bikin boncos"
+    "description": "Perbedaan TradeGPT dengan layanan lain yang sering bikin bingung dan boncos"
   },
   "comparison": {
     "typical": {
-      "title": "Trading Signal Abal-Abal",
+      "title": "Influencer / ChatGPT Default",
       "items": [
-        "Asal tebak tanpa alasan teknikal",
-        "Numpang cuan dengan call buat nyangkutin follower",
-        "Bayar bulanan mahal, plus biaya tersembunyi",
-        "Pamer gaya hidup palsu biar kelihatan sultan",
-        "Cuma tunjukin trade yang profit, yang rugi dihapus",
-        "Suka maksa beli: \"Last call!\" \"Grup VIP tinggal 3 slot!\""
+        "Harus nunggu update dari grup atau promotor",
+        "Penjelasan sinyal bisa kurang lengkap",
+        "ChatGPT default gak paham struktur market dan tidak realtime",
+        "Influencer kadang bias atau overconfident",
+        "Harus langganan bulanan",
+        "Harus mantau terus, kurang cocok untuk yang sibuk",
+        "Tanya jawab lambat atau gak dibalas"
       ]
     },
     "tradeGPT": {
       "title": "Cara Kerja TradeGPT",
       "items": [
-        "Setiap Signal punya alasan teknikal yang jelas",
-        "Analisis objektif untuk aset utama seperti BTC & ETH",
-        "Bayar sekali, tanpa langganan bulanan",
-        "Dibuat untuk trader yang punya kesibukan lain",
-        "Semua analisa transparan, gak ada manipulasi",
-        "Fokus edukasi: kamu bisa belajar sambil trading"
+        "Analisa real-time, langsung bisa dipakai",
+        "Sinyal disertai alasan teknikal & makro",
+        "Sudah ditrain khusus untuk analisa crypto",
+        "Objektif, berdasarkan data dan indikator",
+        "Sekali bayar, akses terus",
+        "Cukup 5-15 menit per hari",
+        "Jawaban instan & bisa diskusi real-time"
       ]
     }
   },
   "cta": {
-    "text": "Gak ada drama. Gak ada tipu-tipu. Hanya Signal simple dengan setup kuat yang didasari analisa.",
+    "text": "Gak cuman disuapin sinyal, sekarang kamu bisa mandiri dan lebih cerdas dengan bantuan AI",
     "button": {
       "text": "Coba Sekarang",
       "link": "#pricing"
