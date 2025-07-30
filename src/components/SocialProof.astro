@@ -11,7 +11,7 @@ const starIconPath = "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0
   <div class="relative z-10 max-w-6xl mx-auto">
     <!-- Section Header -->
     <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-bold mb-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
         {content.header.title.main}
         <span class="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">{content.header.title.highlight}</span>
       </h2>
@@ -47,11 +47,11 @@ const starIconPath = "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0
       ))}
     </div>
     <!-- Stats -->
-    <div class="flex justify-center max-w-4xl mx-auto">
+    <div class="flex justify-center max-w-3xl mx-auto">
       <div class="grid grid-cols-3 gap-8 text-center">
         {content.stats.map(stat => (
           <div>
-            <div class="text-3xl font-bold text-orange-400 mb-2">{stat.value}</div>
+            <div class="text-2xl font-bold text-orange-400 mb-2">{stat.value}</div>
             <p class="text-gray-400">{stat.label}</p>
           </div>
         ))}

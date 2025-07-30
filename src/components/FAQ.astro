@@ -1,5 +1,10 @@
 ---
 import { faqItems } from '../data/faq.json';
+var copyFAQ = {
+  "mainTitle": "Pertanyaan",
+  "title": "Umum",
+  "description": "TradeGPT bantu kamu trade crypto dengan mudah dan efisien. Cukup tanya, AI-nya akan bantu kamu trade crypto dengan analisa yang akurat dan terpercaya."
+}
 ---
 
 <section class="py-12 px-4 relative">  <!-- Reduced padding -->
@@ -10,11 +15,11 @@ import { faqItems } from '../data/faq.json';
     <!-- Section Header -->
     <div class="text-center mb-10">  <!-- Reduced margin -->
       <h2 class="text-3xl md:text-4xl font-bold mb-4">  <!-- Reduced font size and margin -->
-        Common
-        <span class="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">Questions</span>
+        <span class="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">{copyFAQ.mainTitle}</span>
+        {copyFAQ.title}
       </h2>
-      <p class="text-lg text-gray-400">  <!-- Reduced font size -->
-        Everything you need to know about TradeGPT Trading Assistant
+      <p class="text-lg text-gray-400">
+        {copyFAQ.description}
       </p>
     </div>
     

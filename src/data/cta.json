@@ -1,10 +1,10 @@
 {
   "title": {
     "main": "Siap Trading",
-    "highlight": "Lebih Smart?"
+    "highlight": "Seperti Profesional?"
   },
-  "description": "Stop jadi trader boncos, dan sudahlah berhenti nebak-nebak dan mulai ambil keputusan pakai data.",
-  "subtext": "Cukup bayar sekali, akses langsung. Mulai dari paket yang kamu butuh aja.",
+  "description": "Sudahi tebak-tebakan, stop jadi trader boncos. Saatnya ambil keputusan berdasarkan data & logika, bukan feeling.",
+  "subtext": "Bayar sekali, seterusnya",
   "button": {
     "text": "Ambil Akses Pro",
     "link": "#pricing"
@@ -16,7 +16,7 @@
     },
     {
       "icon": "M13 10V3L4 14h7v7l9-11h-7z",
-      "text": "Akses langsung setelah bayar"
+      "text": "Akses instan setelah pembayaran"
     }
   ]
 }

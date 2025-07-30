@@ -1,5 +1,10 @@
 ---
 import features from '../data/features.json';
+var copyFeature = {
+  "title": "Yang dibutuhkan untuk jadi",
+  "boldTitle": "Trader Profesional",
+  "description": "TradeGPT bantu kamu trade crypto dengan mudah dan efisien. Cukup tanya, AI-nya akan bantu kamu trade crypto dengan analisa yang akurat dan terpercaya."
+}
 ---
 
 <section id="features" class="py-16 px-6 relative">
@@ -10,11 +15,11 @@ import features from '../data/features.json';
     <!-- Section Header -->
     <div class="text-center mb-12">
       <h2 class="text-3xl md:text-4xl font-bold mb-4">
-        Everything You Need to
-        <span class="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">Trade Smart</span>
+        {copyFeature.title}
+        <span class="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">{copyFeature.boldTitle}</span>
       </h2>
       <p class="text-lg text-gray-400 max-w-2xl mx-auto">
-        Built for swing traders who want precision without the noise. Get clear signals backed by proven technical and macro analysis.
+        {copyFeature.description}
       </p>
     </div>
     
