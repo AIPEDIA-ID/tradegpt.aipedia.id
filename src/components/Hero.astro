@@ -73,3 +73,47 @@ import heroData from '../data/hero.json';
     </div>
   </div>
 </section>
+
+<style>
+  @keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+  }
+
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  .p-\[2px\].rounded-xl.bg-gradient-to-r.from-white\/30.via-white\/10.to-orange-500\/30 {
+    position: relative;
+    background: transparent !important;
+    z-index: 1;
+  }
+
+  /* Inject glassy animated border */
+  .p-\[2px\].rounded-xl.bg-gradient-to-r.from-white\/30.via-white\/10.to-orange-500\/30::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(
+      var(--angle, 0deg),
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 126, 0, 0.3),
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 126, 0, 0.2)
+    );
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 0;
+    animation: rotate 8s linear infinite;
+  }
+</style>
