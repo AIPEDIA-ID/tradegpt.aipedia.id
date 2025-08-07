@@ -65,7 +65,7 @@ const filteredPosts = searchQuery
       <!-- Blog Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
         {filteredPosts.map((post) => (
-          <article class="bg-gray-900 rounded-lg overflow-hidden hover:bg-gray-800 hover:shadow-xl hover:shadow-orange-500/10 transition-all duration-300 group">
+          <article class="bg-white/5 backdrop-blur-sm border border-white/10 hover:border-white/20 rounded-lg overflow-hidden hover:shadow-xl hover:shadow-orange-500/10 transition-all duration-300 group">
             <div class="aspect-video bg-gray-800 relative overflow-hidden">
               <img 
                 src={post.image} 
