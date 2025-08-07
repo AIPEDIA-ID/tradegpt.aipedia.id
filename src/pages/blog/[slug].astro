@@ -1,0 +1,175 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog');
+  
+  return allPosts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post }
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+const { title, description, date, author, tags, image } = post.data;
+---
+
+<Layout title={`${title} - TradeGPT Blog`}>
+  <article class="min-h-screen bg-black text-white">
+    <!-- Hero Section -->
+    <div class="relative h-96 overflow-hidden">
+      <img 
+        src={image} 
+        alt={title}
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+      
+      <div class="absolute bottom-0 left-0 right-0 p-8">
+        <div class="max-w-4xl mx-auto">
+          <div class="flex flex-wrap gap-2 mb-4">
+            {tags.map((tag) => (
+              <span class="px-3 py-1 bg-orange-500/20 text-orange-400 text-sm rounded-full">
+                {tag}
+              </span>
+            ))}
+          </div>
+          
+          <h1 class="text-3xl md:text-5xl font-bold mb-4">
+            {title}
+          </h1>
+          
+          <div class="flex items-center text-gray-300 text-sm">
+            <span class="mr-4">By {author}</span>
+            <time>{new Date(date).toLocaleDateString('id-ID', { 
+              year: 'numeric', 
+              month: 'long', 
+              day: 'numeric' 
+            })}</time>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="max-w-4xl mx-auto px-4 py-12">
+      <!-- Back Button -->
+      <div class="mb-8">
+        <a 
+          href="/blog"
+          class="inline-flex items-center text-orange-400 hover:text-orange-300 transition-colors"
+        >
+          ← Kembali ke Blog
+        </a>
+      </div>
+
+      <!-- Article Content -->
+      <div class="prose prose-invert prose-orange max-w-none">
+        <Content />
+      </div>
+
+      <!-- Share Section -->
+      <div class="mt-12 pt-8 border-t border-gray-800">
+        <h3 class="text-xl font-bold mb-4">Bagikan Artikel</h3>
+        <div class="flex space-x-4">
+          <a 
+            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(Astro.url.href)}`}
+            target="_blank"
+            class="px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded transition-colors"
+          >
+            Twitter
+          </a>
+          <a 
+            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(Astro.url.href)}`}
+            target="_blank"
+            class="px-4 py-2 bg-blue-700 hover:bg-blue-800 rounded transition-colors"
+          >
+            Facebook
+          </a>
+          <a 
+            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(Astro.url.href)}`}
+            target="_blank"
+            class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded transition-colors"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <!-- Related Articles -->
+      <div class="mt-12 pt-8 border-t border-gray-800">
+        <h3 class="text-xl font-bold mb-6">Artikel Terkait</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- You can implement related articles logic here -->
+          <div class="text-gray-400">
+            <p>Artikel terkait akan ditampilkan di sini...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .prose {
+    color: #e5e7eb;
+  }
+  
+  .prose h1, .prose h2, .prose h3, .prose h4 {
+    color: #f97316;
+    font-weight: 700;
+  }
+  
+  .prose h1 {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .prose h2 {
+    font-size: 1.875rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .prose h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .prose p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+  
+  .prose ul, .prose ol {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+  
+  .prose li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .prose strong {
+    color: #f97316;
+    font-weight: 600;
+  }
+  
+  .prose code {
+    background-color: #374151;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+  }
+  
+  .prose blockquote {
+    border-left: 4px solid #f97316;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: #d1d5db;
+  }
+</style>
